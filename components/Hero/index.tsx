@@ -18,7 +18,7 @@ const Hero = () => {
                   Let there be growth
                 </h1>
                 <p className="dark:text-body-color-dark mb-12 text-base !leading-relaxed text-body-color sm:text-lg md:text-xl">
-                  Pushing the boundaries of what's possible
+                  Pushing the boundaries of what&apos;s possible
                 </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Link

@@ -160,7 +160,7 @@ const CaseStudyDetails = ({ caseStudy }: { caseStudy: ArticleType }) => {
                                     <ul className="mb-10 list-inside text-body-color">
                                         {
                                             caseStudy.details.listItems.map(item => (
-                                                <li className="mb-2 text-base text-center font-medium text-body-color sm:text-lg lg:text-base xl:text-lg">
+                                                <li key={item} className="mb-2 text-base text-center font-medium text-body-color sm:text-lg lg:text-base xl:text-lg">
                                                     {item}
                                                 </li>
                                             ))
@@ -354,7 +354,7 @@ const CaseStudyDetails = ({ caseStudy }: { caseStudy: ArticleType }) => {
                             <div className="flex flex-row">
                                 {
                                     caseStudyData.map((item) => (
-                                        <RenderBlogID id={item.id.toString()} />
+                                        <RenderBlogID key={item.id} id={item.id.toString()} />
                                     ))
                                 }
                             </div>
