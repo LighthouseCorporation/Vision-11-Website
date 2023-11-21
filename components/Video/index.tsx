@@ -3,7 +3,6 @@
 import Image from "next/image";
 import { useState } from "react";
 import SectionTitle from "../Common/SectionTitle";
-
 import ModalVideo from "react-modal-video";
 
 const Video = () => {
@@ -14,7 +13,7 @@ const Video = () => {
       <div className="container">
         <SectionTitle
           title="We are ready to start"
-          paragraph="Leverage our research methodologies today"
+          paragraph=""
           center
           mb="80px"
         />

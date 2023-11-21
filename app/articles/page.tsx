@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   // other metadata
 };
 
-const Blog = () => {
+const Articles = () => {
   return (
     <>
       <Breadcrumb
@@ -98,4 +98,4 @@ const Blog = () => {
   );
 };
 
-export default Blog;
+export default Articles;

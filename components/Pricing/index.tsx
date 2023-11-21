@@ -5,171 +5,119 @@ import OfferList from "./OfferList";
 import PricingBox from "./PricingBox";
 
 const Pricing = () => {
-  const [isMonthly, setIsMonthly] = useState(true);
+  const [detailsVisible, setDetailsVisible] = useState(true);
 
   return (
     <section id="pricing" className="relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
-          title="Enterprise Growth Research"
-          paragraph="Research-based Enterprise Solutions for your business"
+          title="Book a ticket to growth island"
+          paragraph=""
           center
           width="665px"
         />
 
         {/* Section Toggler */}
 
-        {/* <div className="w-full">
+        <div className="w-full">
           <div
             className="wow fadeInUp mb-8 flex justify-center md:mb-12 lg:mb-16"
             data-wow-delay=".1s"
           >
             <span
-              onClick={() => setIsMonthly(true)}
-              className={`${
-                isMonthly
-                  ? "pointer-events-none text-primary"
-                  : "text-dark dark:text-white"
-              } mr-4 cursor-pointer text-base font-semibold`}
+              onClick={() => setDetailsVisible(false)}
+              className={`${detailsVisible
+                ? "text-dark dark:text-white"
+                : "pointer-events-none text-primary"
+                } mr-4 cursor-pointer text-base font-semibold`}
             >
-              Monthly
+              Hide Details
             </span>
             <div
-              onClick={() => setIsMonthly(!isMonthly)}
+              onClick={() => setDetailsVisible(!detailsVisible)}
               className="flex cursor-pointer items-center"
             >
               <div className="relative">
-                <div className="h-5 w-14 rounded-full bg-[#1D2144] shadow-inner"></div>
+                <div className={`h-5 w-14 rounded-full ${ detailsVisible ? "bg-[#1D7134]" : "bg-[#1D2144]"} shadow-inner`}></div>
                 <div
-                  className={`${
-                    isMonthly ? "" : "translate-x-full"
-                  } shadow-switch-1 absolute left-0 top-[-4px] flex h-7 w-7 items-center justify-center rounded-full bg-primary transition`}
+                  className={`${detailsVisible ? "translate-x-full" : ""
+                    } shadow-switch-1 absolute left-0 top-[-4px] flex h-7 w-7 items-center justify-center rounded-full bg-primary transition`}
                 >
                   <span className="active h-4 w-4 rounded-full bg-white"></span>
                 </div>
               </div>
             </div>
             <span
-              onClick={() => setIsMonthly(false)}
-              className={`${
-                isMonthly
-                  ? "text-dark dark:text-white"
-                  : "pointer-events-none text-primary"
-              } ml-4 cursor-pointer text-base font-semibold`}
+              onClick={() => setDetailsVisible(true)}
+              className={`${detailsVisible
+                ? "pointer-events-none text-primary"
+                : "text-dark dark:text-white"
+                } ml-4 cursor-pointer text-base font-semibold`}
             >
-              Yearly
+              See Details
             </span>
           </div>
-        </div> */}
+        </div>
 
         {/* Service Cards */}
 
-        {/* <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-x-8 gap-y-10 my-5 py-5 md:grid-cols-2 lg:grid-cols-3">
           <PricingBox
-            packageName="Lite"
-            price={isMonthly ? "Operations Consulting" : "1.9M"}
-            duration={isMonthly ? "mo" : "yr"}
-            subtitle="Optimize operations towards business goals"
+            packageName="Intelligent Systems"
+            price={""}
+            duration={""}
+            subtitle=""
           >
-            <OfferList text="Business Modeling" status="active" />
-            <OfferList text="Iterative Solutions" status="active" />
-            <OfferList text="Execution Support" status="active" />
-            <OfferList text="Access to research methodologies" status="active" />
-            <OfferList text="Data Analytics" status="active" />
-            <OfferList text="Admin Voice Assistant" status="inactive" />
-            <OfferList text="Client Voice Assistant" status="inactive" />
+            {
+              detailsVisible && (
+                <>
+                  <OfferList text="Business Modeling" status="active" />
+                  <OfferList text="Iterative Solutions" status="active" />
+                  <OfferList text="Execution Support" status="active" />
+                  <OfferList text="Access to research methodologies" status="active" />
+                  <OfferList text="Data Analytics" status="active" />
+                </>
+              )
+            }
           </PricingBox>
           <PricingBox
-            packageName="Basic"
-            price={isMonthly ? "Process Orchestration" : "5.6M"}
-            duration={isMonthly ? "mo" : "yr"}
-            subtitle="Streamline business processes"
+            packageName="Enterprise Growth Research"
+            price={""}
+            duration={""}
+            subtitle=""
           >
-            <OfferList text="Business Modeling" status="active" />
-            <OfferList text="Iterative Solutions" status="active" />
-            <OfferList text="ERM Software" status="active" />
-            <OfferList text="Access to research methodologies" status="active" />
-            <OfferList text="Data Analytics" status="active" />
-            <OfferList text="Admin Voice Assistant" status="active" />
-            <OfferList text="Client Voice Assistant" status="active" />
-          </PricingBox>
-          <PricingBox
-            packageName="Plus"
-            price={isMonthly ? "Intelligent Systems" : "13.2M"}
-            duration={isMonthly ? "mo" : "yr"}
-            subtitle="Intelligent Systems for your business"
-          >
-            <OfferList text="Business Modeling" status="active" />
-            <OfferList text="Iterative Solutions" status="active" />
-            <OfferList text="Execution Support" status="active" />
-            <OfferList text="Access to research methodologies" status="inactive" />
-            <OfferList text="Data Analytics" status="active" />
-            <OfferList text="Admin Voice Assistant" status="active" />
-            <OfferList text="Client Voice Assistant" status="active" />
-          </PricingBox>
-        </div> */}
+            {
+              detailsVisible && (
+                <>
+                  <OfferList text="Business Modeling" status="active" />
+                  <OfferList text="Iterative Solutions" status="active" />
+                  <OfferList text="Execution Support" status="active" />
+                  <OfferList text="Access to research methodologies" status="active" />
+                  <OfferList text="Data Analytics" status="active" />
+                </>
+              )
+            }
 
-        {/* Additional Paragraph */}
-
-        <p className="pb-4 mb-5"> Growth is eternal, and businesses more than ever, are required to match the rate of technological and scientific advancements,
-          with their rate of growth. With this, arises the need for research prowess, to not only ensure the companys processes
-          are up to date, but that they align with their desired rate of growth. Vision 11 is your trusted partner in growth research.
-        </p>
-        {/* Service Cards */}
-
-        <div className="grid grid-cols-1 gap-x-8 gap-y-10 mt-5 pt-5 md:grid-cols-2 lg:grid-cols-3">
-          <PricingBox
-            packageName="Lite"
-            price={isMonthly ? "Small Enterprises" : "1.9M"}
-            duration={isMonthly ? "mo" : "yr"}
-            subtitle="Ksh 50,000"
-          >
-            <OfferList text="Business Modeling" status="active" />
-            <OfferList text="Iterative Solutions" status="active" />
-            <OfferList text="Execution Support" status="active" />
-            <OfferList text="Access to research methodologies" status="active" />
-            <OfferList text="Data Analytics" status="active" />
           </PricingBox>
           <PricingBox
-            packageName="Basic"
-            price={isMonthly ? "Medium Enterprises" : "5.6M"}
-            duration={isMonthly ? "mo" : "yr"}
-            subtitle="Ksh 200,000"
+            packageName="Process Orchestration"
+            price={""}
+            duration={""}
+            subtitle=""
           >
-            <OfferList text="Business Modeling" status="active" />
-            <OfferList text="Iterative Solutions" status="active" />
-            <OfferList text="Execution Support" status="active" />
-            <OfferList text="Access to research methodologies" status="active" />
-            <OfferList text="Data Analytics" status="active" />
-          </PricingBox>
-          <PricingBox
-            packageName="Plus"
-            price={isMonthly ? "Large Enterprises" : "13.2M"}
-            duration={isMonthly ? "mo" : "yr"}
-            subtitle="Ksh 800,000"
-          >
-            <OfferList text="Business Modeling" status="active" />
-            <OfferList text="Iterative Solutions" status="active" />
-            <OfferList text="Execution Support" status="active" />
-            <OfferList text="Access to research methodologies" status="active" />
-            <OfferList text="Data Analytics" status="active" />
+            {
+              detailsVisible && (
+                <>
+                  <OfferList text="Business Modeling" status="active" />
+                  <OfferList text="Iterative Solutions" status="active" />
+                  <OfferList text="Execution Support" status="active" />
+                  <OfferList text="Access to research methodologies" status="active" />
+                  <OfferList text="Data Analytics" status="active" />
+                </>
+              )
+            }
           </PricingBox>
         </div>
-        <div className="flex flex-col text-center mx-auto my-5">
-          <p>NB: The prices stated above are not rigid and may be adjusted according to specific use cases</p>
-          <h1 className="font-bold mt-5">The Research will answer the following questions;</h1>
-          <ul className="flex flex-col mx-auto my-5 align-center">
-            <li className="py-2">Is your enterprise leveraging data to the fullest?</li>
-            <li className="py-2">Are there processes that can be automated?</li>
-            <li className="py-2">Can we improve product-market fit?</li>
-            <li className="py-2">Can we build custom Intelligent Systems for your enterprise?</li>
-            <li className="py-2">Are there new workflows that can increase sales?</li>
-            <li className="py-2">To what degree would this modifications enhance your enterprise?</li>
-          </ul>
-        </div>
-        <button className="flex mx-auto mt-5 shadow-submit align-center dark:shadow-submit-dark rounded-sm bg-primary px-9 py-4 text-base font-medium text-white duration-300 hover:bg-primary/90">
-          Schedule Free Consultation Call
-        </button>
       </div>
       <div className="absolute bottom-0 left-0 z-[-1]">
         <svg

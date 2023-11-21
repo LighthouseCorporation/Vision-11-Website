@@ -1,8 +1,9 @@
+import Quote from "../Common/Quote";
 import SectionTitle from "../Common/SectionTitle";
 import SingleArticle from "./SingleArticle";
 import articleData from "./articleData";
 
-const Blog = () => {
+const ArticleSection = () => {
   return (
     <section
       id="blog"
@@ -11,7 +12,7 @@ const Blog = () => {
       <div className="container">
         <SectionTitle
           title="Articles and Papers"
-          paragraph="Explore prominent publications in the fields of natural language processing and neuroscience"
+          paragraph=""
           center
         />
 
@@ -22,9 +23,12 @@ const Blog = () => {
             </div>
           ))}
         </div>
+        <div className="mt-5 py-5">
+          <Quote quote="“Intelligent systems are the future, and the future is now”" />
+        </div>
       </div>
     </section>
   );
 };
 
-export default Blog;
+export default ArticleSection;

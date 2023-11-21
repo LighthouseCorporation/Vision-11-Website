@@ -4,7 +4,7 @@ const AboutSectionTwo = () => {
   return (
     <section className="py-16 md:py-20 lg:py-28">
       <div className="container">
-        <div className="-mx-4 flex flex-wrap items-center">
+        <div className="-mx-4 mb-5 pb-5 flex flex-wrap items-center">
           <div className="w-full px-4 lg:w-1/2">
             <div
               className="wow fadeInUp relative mx-auto mb-12 aspect-[25/24] max-w-[500px] text-center lg:m-0"
@@ -31,7 +31,7 @@ const AboutSectionTwo = () => {
                   Process Automation
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                The ability to automate business processes using a variety of tools and technologies, including workflow engines, business rules engines, and robotic process automation (RPA).
+                  The ability to automate business processes using a variety of tools and technologies, including workflow engines, business rules engines, and robotic process automation (RPA).
                 </p>
               </div>
               <div className="mb-9">
@@ -39,7 +39,7 @@ const AboutSectionTwo = () => {
                   Process Monitoring
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                The ability to monitor the performance of business processes in real-time, including metrics such as cycle time, throughput, error rates, and real-time data analytics.
+                  The ability to monitor the performance of business processes in real-time, including metrics such as cycle time, throughput, error rates, and real-time data analytics.
                 </p>
               </div>
               <div className="mb-1">
@@ -47,7 +47,7 @@ const AboutSectionTwo = () => {
                   Process Optimization
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                The ability to analyze process performance data and identify areas for improvement, such as bottlenecks or inefficiencies.
+                  The ability to analyze process performance data and identify areas for improvement, such as bottlenecks or inefficiencies.
                 </p>
               </div>
             </div>

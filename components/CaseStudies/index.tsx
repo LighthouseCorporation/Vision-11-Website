@@ -1,8 +1,8 @@
 import SingleCase from "@/components/Articles/SingleCase";
 import caseData from "@/components/Articles/caseStudyData";
 
-export const CaseStudiesPage=()=>{
-   
+export const CaseStudiesPage = () => {
+
     return (
         <section className="pb-[120px] pt-[120px]">
             <div className="container">
@@ -16,7 +16,6 @@ export const CaseStudiesPage=()=>{
                         </div>
                     ))}
                 </div>
-
                 <div
                     className="wow fadeInUp -mx-4 flex flex-wrap"
                     data-wow-delay=".15s"
