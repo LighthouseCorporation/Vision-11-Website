@@ -46,7 +46,7 @@ const articleData: ArticleType[] = [
     comments: "890",
     path: "natural-language-processing",
     details: {
-      section1: "According to my thesis, all is planned out for the beginning. If this is the case, it would imply that every word we utter is not voluntary or was not voluntarily created. What does this mean? It means that we can attach meaning to different homophones.And that the individual meanings of these homophones would make up the meaning the entire word",
+      section1: "According to my thesis, all is planned out from the beginning. If this is the case, it would imply that every word we utter is not voluntary or was not voluntarily created. What does this mean? It means that we can attach meaning to different homophones.And that the individual meanings of these homophones would make up the meaning the entire word",
       section2: "Let us look at an example. In the context of the word book, we can derive three sounds; b , u and k. The meaning of each would thus make up the meaning of book. This would imply that the words see and sea have very high correlation in terms of their root meaning. If this hypothesis is correct. It would imply that indeed there are no coincidences, and are everything we do conforms to a certain pattern and way of expression.",
       subHeading: "",
       listItems: [""],

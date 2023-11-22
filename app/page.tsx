@@ -26,7 +26,6 @@ export default function Home() {
       <Testimonials />
       <AboutSectionOne />
       <AboutSectionTwo />
-      <ArticleSection />
       <Video />
       <Contact />
     </>

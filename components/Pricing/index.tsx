@@ -3,10 +3,17 @@ import { useState } from "react";
 import SectionTitle from "../Common/SectionTitle";
 import OfferList from "./OfferList";
 import PricingBox from "./PricingBox";
+import InputForm from "../InputForm";
 
 const Pricing = () => {
   const [detailsVisible, setDetailsVisible] = useState(true);
+  const [modalVisible, setModalVisible] = useState(false)
+  const [selectedService, setSelectedService] = useState("")
 
+  function handleClick(service: string){
+    setSelectedService(service)
+    setModalVisible(true)
+  }
   return (
     <section id="pricing" className="relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
@@ -67,6 +74,7 @@ const Pricing = () => {
             price={""}
             duration={""}
             subtitle=""
+            openFunction={()=>handleClick("Intelligent Systems")}
           >
             {
               detailsVisible && (
@@ -85,6 +93,7 @@ const Pricing = () => {
             price={""}
             duration={""}
             subtitle=""
+            openFunction={()=>handleClick("Enterprise Growth Research")}
           >
             {
               detailsVisible && (
@@ -104,6 +113,7 @@ const Pricing = () => {
             price={""}
             duration={""}
             subtitle=""
+            openFunction={()=>handleClick("Process Orchestration")}
           >
             {
               detailsVisible && (
@@ -118,6 +128,7 @@ const Pricing = () => {
             }
           </PricingBox>
         </div>
+        <InputForm service={selectedService} modalVisible={modalVisible} setModalVisible={setModalVisible} />
       </div>
       <div className="absolute bottom-0 left-0 z-[-1]">
         <svg

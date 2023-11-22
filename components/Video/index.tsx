@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 import SectionTitle from "../Common/SectionTitle";
 import ModalVideo from "react-modal-video";
+import Quote from "../Common/Quote";
 
 const Video = () => {
   const [isOpen, setOpen] = useState(false);
@@ -56,6 +57,10 @@ const Video = () => {
         videoId="L61p2uyiMSo"
         onClose={() => setOpen(false)}
       />
+
+      <div className="mt-5 pt-5 w-1/2 pt-5 mx-auto">
+        <Quote quote="“Intelligent systems are the future, and the future is now”" />
+      </div>
 
       <div className="absolute bottom-0 left-0 right-0 z-[-1] h-full w-full bg-[url(/images/video/shape.svg)] bg-cover bg-center bg-no-repeat"></div>
     </section>
