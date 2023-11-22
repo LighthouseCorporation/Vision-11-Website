@@ -39,7 +39,7 @@ const Contact = () => {
                 Our support team will get back to you via the contact address you choose.
                 Choose either an email address or a phone number
               </p>
-              <form>
+              <form action="https://formsubmit.co/a8e59a9c3959435d8a376bc8e85ee915" method="POST">
                 <div className="-mx-4 flex flex-wrap">
                   <div className="w-full px-4 md:w-1/2">
                     <div className="mb-8">
@@ -50,7 +50,7 @@ const Contact = () => {
                         Your Name
                       </label>
                       <input
-                        type="text"
+                        type="text" name="Name"
                         placeholder="Enter your name"
                         className="border-stroke dark:text-body-color-dark dark:shadow-two w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:focus:border-primary dark:focus:shadow-none"
                       />
@@ -59,13 +59,13 @@ const Contact = () => {
                   <div className="w-full px-4 md:w-1/2">
                     <div className="mb-8">
                       <label
-                        htmlFor="email"
+                        htmlFor="phone"
                         className="mb-3 block text-sm font-medium text-dark dark:text-white"
                       >
                         Contact Address
                       </label>
                       <input
-                        type="email"
+                        type="text" name="Email or Phone"
                         placeholder="Enter email or phone"
                         className="border-stroke dark:text-body-color-dark dark:shadow-two w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:focus:border-primary dark:focus:shadow-none"
                       />
@@ -80,7 +80,7 @@ const Contact = () => {
                         Message
                       </label>
                       <textarea
-                        name="message"
+                        name="Quick Message"
                         rows={5}
                         placeholder="Enter your Message"
                         className="border-stroke dark:text-body-color-dark dark:shadow-two w-full resize-none rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:focus:border-primary dark:focus:shadow-none"
@@ -88,7 +88,7 @@ const Contact = () => {
                     </div>
                   </div>
                   <div className="w-full px-4">
-                    <button className="shadow-submit dark:shadow-submit-dark rounded-sm bg-primary px-9 py-4 text-base font-medium text-white duration-300 hover:bg-primary/90">
+                    <button type="submit" className="shadow-submit dark:shadow-submit-dark rounded-sm bg-primary px-9 py-4 text-base font-medium text-white duration-300 hover:bg-primary/90">
                       Submit Quick Message
                     </button>
                   </div>

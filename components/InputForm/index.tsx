@@ -42,7 +42,7 @@ const InputForm = ({ modalVisible, setModalVisible, service }: InputFormProps) =
                                                 <button onClick={() => setModalVisible(false)} className="back_to_site" id="bts">Return to site</button>
                                             </div>
                                         ) : (
-                                            <form action="https://formsubmit.co/info@vision11.co.ke" method="POST"
+                                            <form action="https://formsubmit.co/a8e59a9c3959435d8a376bc8e85ee915" method="POST"
                                             className="form_data flex flex-col items-center" id="form-data">
                                                 <h4 className="text-black dark:text-white text-center text-1xl mt-1">Expression of Interest</h4>
                                                 <div className="input_box">
@@ -51,7 +51,7 @@ const InputForm = ({ modalVisible, setModalVisible, service }: InputFormProps) =
                                                     <i></i>
                                                 </div>
                                                 <div className="input_box">
-                                                    <input className="text-white dark:text-white" placeholder="Phone" name="Phone" type="text" required />
+                                                    <input className="text-white dark:text-white" placeholder="Phone number" name="Phone" type="text" required />
                                                     <span className="text-black dark:text-white">Phone number</span>
                                                     <i></i>
                                                 </div>

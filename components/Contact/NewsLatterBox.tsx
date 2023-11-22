@@ -14,31 +14,29 @@ const NewsLatterBox = () => {
         Subscribe to receive future updates
       </h3>
       <p className="mb-11 border-b border-body-color border-opacity-25 pb-11 text-base leading-relaxed text-body-color dark:border-white dark:border-opacity-25">
-        If you submit your email, we will send updates to your email. If you submit your phone number, we will text you on whatsapp and you
-        will be able to see our status updates
+        We will text you on whatsapp so you can see our status updates
       </p>
-      <div>
+      <form action="https://formsubmit.co/a8e59a9c3959435d8a376bc8e85ee915" method="POST">
         <input
           type="text"
-          name="name"
+          name="Whatsapp Name"
           placeholder="Enter your name"
           className="border-stroke dark:text-body-color-dark dark:shadow-two mb-4 w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:focus:border-primary dark:focus:shadow-none"
         />
         <input
-          type="email"
-          name="email"
-          placeholder="Enter email or phone"
+          type="tel"
+          name="Whatsapp Number"
+          placeholder="Whatsapp Number"
           className="border-stroke dark:text-body-color-dark dark:shadow-two mb-4 w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:focus:border-primary dark:focus:shadow-none"
         />
-        <input
+        <button
           type="submit"
-          value="Subscribe"
           className="shadow-submit dark:shadow-submit-dark mb-5 flex w-full cursor-pointer items-center justify-center rounded-sm bg-primary px-9 py-4 text-base font-medium text-white duration-300 hover:bg-primary/90"
-        />
+        >Submit</button>
         <p className="dark:text-body-color-dark text-center text-base leading-relaxed text-body-color">
-          No spam or third-party messages will be sent to the method of your choosing
+          No spam or third-party messages will be sent.
         </p>
-      </div>
+      </form>
 
       <div>
         <span className="absolute left-2 top-7">
