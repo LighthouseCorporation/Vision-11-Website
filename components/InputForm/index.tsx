@@ -38,7 +38,7 @@ const InputForm = ({ modalVisible, setModalVisible, service }: InputFormProps) =
                                     {
                                         submitted ? (
                                             <div className="submitted" id="submitted">
-                                                <h4>Your request is now being processed. We'll be in-touch shortly</h4>
+                                                <h4>Your request is now being processed. We&apos;ll be in-touch shortly</h4>
                                                 <button onClick={() => setModalVisible(false)} className="back_to_site" id="bts">Return to site</button>
                                             </div>
                                         ) : (
