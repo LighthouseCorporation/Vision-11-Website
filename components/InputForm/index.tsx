@@ -46,25 +46,25 @@ const InputForm = ({ modalVisible, setModalVisible, service }: InputFormProps) =
                                             className="form_data flex flex-col items-center" id="form-data">
                                                 <h4 className="text-black dark:text-white text-center text-1xl mt-1">Expression of Interest</h4>
                                                 <div className="input_box">
-                                                    <input className="text-white dark:text-white" title="Name" name="Name" type="text" value={name} onChange={(e) => setName(e.target.value)} />
+                                                    <input className="text-white dark:text-white" placeholder="Name" name="Name" type="text" required />
                                                     <span className="text-black dark:text-white">Name</span>
                                                     <i></i>
                                                 </div>
                                                 <div className="input_box">
-                                                    <input className="text-white dark:text-white" title="Phone" name="Phone" type="phone" value={phone} onChange={(e) => setPhone(e.target.value)} />
+                                                    <input className="text-white dark:text-white" placeholder="Phone" name="Phone" type="text" required />
                                                     <span className="text-black dark:text-white">Phone number</span>
                                                     <i></i>
                                                 </div>
                                                 <div className="desired_service">
                                                     <p className="ds_text">Desired Service</p>
-                                                    <select defaultValue={service} value={selectedService} onChange={(e)=>setSelectedService(e.target.value)} onSelect={handleServiceSelect} title="Services" id="services" name="Desired Service">
+                                                    <select defaultValue={service} title="Services" id="services" name="Desired Service" required>
                                                         <option value="Intelligent Systems">Intelligent System</option>
                                                         <option value="Enterprise Growth Research">Enterprise Growth Research</option>
                                                         <option value="Process Orchestration">Process Orchestration</option>
                                                     </select>
                                                 </div>
                                                 <div className="relative w-full">
-                                                    <button title="Submit" type="submit" id="submit" onClick={handleSubmit} value="Submit" className="submit_button text-black dark:text-white absolute top-5 right-0">
+                                                    <button type="submit" className="submit_button text-black dark:text-white absolute top-5 right-0">
                                                         Submit
                                                     </button>
                                                 </div>
