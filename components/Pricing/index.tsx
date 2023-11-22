@@ -10,7 +10,7 @@ const Pricing = () => {
   const [modalVisible, setModalVisible] = useState(false)
   const [selectedService, setSelectedService] = useState("")
 
-  function handleClick(service: string){
+  function handleClick(service: string) {
     setSelectedService(service)
     setModalVisible(true)
   }
@@ -45,7 +45,7 @@ const Pricing = () => {
               className="flex cursor-pointer items-center"
             >
               <div className="relative">
-                <div className={`h-5 w-14 rounded-full ${ detailsVisible ? "bg-[#1D7134]" : "bg-[#1D2144]"} shadow-inner`}></div>
+                <div className={`h-5 w-14 rounded-full ${detailsVisible ? "bg-[#1D7134]" : "bg-[#1D2144]"} shadow-inner`}></div>
                 <div
                   className={`${detailsVisible ? "translate-x-full" : ""
                     } shadow-switch-1 absolute left-0 top-[-4px] flex h-7 w-7 items-center justify-center rounded-full bg-primary transition`}
@@ -70,30 +70,11 @@ const Pricing = () => {
 
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 my-5 py-5 md:grid-cols-2 lg:grid-cols-3">
           <PricingBox
-            packageName="Intelligent Systems"
-            price={""}
-            duration={""}
-            subtitle=""
-            openFunction={()=>handleClick("Intelligent Systems")}
-          >
-            {
-              detailsVisible && (
-                <>
-                  <OfferList text="Business Modeling" status="active" />
-                  <OfferList text="Iterative Solutions" status="active" />
-                  <OfferList text="Execution Support" status="active" />
-                  <OfferList text="Access to research methodologies" status="active" />
-                  <OfferList text="Data Analytics" status="active" />
-                </>
-              )
-            }
-          </PricingBox>
-          <PricingBox
             packageName="Enterprise Growth Research"
             price={""}
             duration={""}
             subtitle=""
-            openFunction={()=>handleClick("Enterprise Growth Research")}
+            openFunction={() => handleClick("Enterprise Growth Research")}
           >
             {
               detailsVisible && (
@@ -109,11 +90,30 @@ const Pricing = () => {
 
           </PricingBox>
           <PricingBox
+            packageName="Intelligent Systems"
+            price={""}
+            duration={""}
+            subtitle=""
+            openFunction={() => handleClick("Intelligent Systems")}
+          >
+            {
+              detailsVisible && (
+                <>
+                  <OfferList text="Business Modeling" status="active" />
+                  <OfferList text="Iterative Solutions" status="active" />
+                  <OfferList text="Execution Support" status="active" />
+                  <OfferList text="Access to research methodologies" status="active" />
+                  <OfferList text="Data Analytics" status="active" />
+                </>
+              )
+            }
+          </PricingBox>
+          <PricingBox
             packageName="Process Orchestration"
             price={""}
             duration={""}
             subtitle=""
-            openFunction={()=>handleClick("Process Orchestration")}
+            openFunction={() => handleClick("Process Orchestration")}
           >
             {
               detailsVisible && (
