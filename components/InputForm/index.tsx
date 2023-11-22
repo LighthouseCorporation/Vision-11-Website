@@ -57,7 +57,7 @@ const InputForm = ({ modalVisible, setModalVisible, service }: InputFormProps) =
                                                 </div>
                                                 <div className="desired_service">
                                                     <p className="ds_text">Desired Service</p>
-                                                    <select defaultValue={service} onSelect={handleServiceSelect} title="Services" id="services" name="Desired Service">
+                                                    <select defaultValue={service} value={selectedService} onChange={(e)=>setSelectedService(e.target.value)} onSelect={handleServiceSelect} title="Services" id="services" name="Desired Service">
                                                         <option value="Intelligent Systems">Intelligent System</option>
                                                         <option value="Enterprise Growth Research">Enterprise Growth Research</option>
                                                         <option value="Process Orchestration">Process Orchestration</option>
