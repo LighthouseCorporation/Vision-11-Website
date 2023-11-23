@@ -44,13 +44,15 @@ const CaseStudyDetails = ({ caseStudy }: { caseStudy: ArticleType }) => {
                 <div className="container">
                     <div className="-mx-4 flex flex-wrap justify-center">
                         <div className="w-full px-4 lg:w-8/12">
-                            <Link href="/case-studies" style={{ position: "absolute", left: 95, top: 150 }}>
-                                <h1 style={{ fontSize: 28 }}>{"<"}</h1>
-                            </Link>
                             <div>
-                                <h2 className="mb-8 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight">
-                                    {caseStudy.title}
-                                </h2>
+                                <div className="flex">
+                                    <Link href="/case-studies" className="mr-5">
+                                        <h1 className="text-3xl text-body-color">{"<"}</h1>
+                                    </Link>
+                                    <h2 className="mb-8 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight">
+                                        {caseStudy.title}
+                                    </h2>
+                                </div>
                                 <div className="mb-10 flex flex-wrap items-center justify-between border-b border-body-color border-opacity-10 pb-4 dark:border-white dark:border-opacity-10">
                                     <div className="flex flex-wrap items-center">
                                         <div className="mb-5 mr-10 flex items-center">
