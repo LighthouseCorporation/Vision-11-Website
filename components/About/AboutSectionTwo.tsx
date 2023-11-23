@@ -34,7 +34,7 @@ const AboutSectionTwo = () => {
                 mb="44px"
               />
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Automate and Digitally represent Processes
+                  2. Automate Processes
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
                   Involves using a variety of tools and technologies, including workflow engines, business rules engines, and robotic process automation (RPA) to automate processes.
@@ -44,7 +44,7 @@ const AboutSectionTwo = () => {
               </div>
               <div className="mb-9">
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Monitor Processes
+                  3. Monitor Processes
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
                   Monitor the performance of business processes in real-time, including metrics such as cycle time, throughput, error rates, and real-time data analytics,
@@ -53,7 +53,7 @@ const AboutSectionTwo = () => {
               </div>
               <div className="mb-1">
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Optimize Processes
+                  4. Optimize Processes
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
                   Analyze process performance data and identify areas for improvement, such as bottlenecks or inefficiencies.

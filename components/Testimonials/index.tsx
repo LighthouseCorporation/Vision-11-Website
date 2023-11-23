@@ -38,7 +38,7 @@ const Testimonials = () => {
       <div className="container">
         <SectionTitle
           title="Accelerate Your IT Modernization"
-          paragraph="Stay ahead of the curve"
+          paragraph=""
           center
         />
 

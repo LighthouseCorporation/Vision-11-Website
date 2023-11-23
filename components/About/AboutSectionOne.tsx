@@ -22,12 +22,11 @@ const AboutSectionOne = () => {
       <div className="container">
         <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
           <div className="-mx-4 flex flex-wrap items-center">
-            <div className="w-full px-4 lg:w-1/2">
-              <SectionTitle
-                title="What does it take?"
-                paragraph="The first ‘step’ is to generate a business model and represent it on a graphical user interface"
-                mb="44px"
-              />
+            <div className="w-full p-4  lg:w-1/2">
+              <h1 className="mb-4 text-3xl font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[45px]"
+              aria-description="What does it take to build an intelligent system?"
+              >What does it take? </h1>
+              <h2 className="my-5 py-5 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">1. Build Corporate Model</h2>
               <div
                 className="wow fadeInUp mb-12 max-w-[570px] lg:mb-0"
                 data-wow-delay=".15s"
@@ -46,7 +45,6 @@ const AboutSectionOne = () => {
                   </div>
                 </div>
               </div>
-              <h1 className="text-xl font-bold mt-5" >And Then ...</h1>
             </div>
             <div className="w-full px-4 lg:w-1/2">
               <div

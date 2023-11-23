@@ -13,8 +13,8 @@ const ContactPage = () => {
   return (
     <>
       <Breadcrumb
-        pageName="Its never too late"
-        description="You are here for a reason"
+        pageName="We are glad you found us"
+        description="And we&apos;d like to find you"
       />
       <Contact />
     </>

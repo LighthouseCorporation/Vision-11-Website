@@ -21,7 +21,7 @@ const Pricing = () => {
 
         {/* Section Toggler */}
 
-        <div className="w-full">
+        <div className="w-full hidden">
           <div
             className="wow fadeInUp mb-8 flex justify-center md:mb-12 lg:mb-16"
             data-wow-delay=".1s"
@@ -40,7 +40,7 @@ const Pricing = () => {
               className="flex cursor-pointer items-center"
             >
               <div className="relative">
-                <div className={`h-5 w-14 rounded-full ${detailsVisible ? "bg-[#1D7134]" : "bg-[#1D2144]"} shadow-inner`}></div>
+                <div className={`h-5 w-14 rounded-full ${detailsVisible ? "bg-[#1D713444]" : "bg-[#1D2144]"} shadow-inner`}></div>
                 <div
                   className={`${detailsVisible ? "translate-x-full" : ""
                     } shadow-switch-1 absolute left-0 top-[-4px] flex h-7 w-7 items-center justify-center rounded-full bg-primary transition`}
@@ -74,8 +74,8 @@ const Pricing = () => {
               detailsVisible && (
                 <>
                   <OfferList text="Collect data" status="active" />
-                  <OfferList text="Perform inferential analysis" status="active" />
-                  <OfferList text="Perform Predictive analysis" status="active" />
+                  <OfferList text="Inferential analysis" status="active" />
+                  <OfferList text="Predictive analysis" status="active" />
                   <OfferList text="Visualize data" status="active" />
                   <OfferList text="Process Natural Language" status="active" />
                 </>

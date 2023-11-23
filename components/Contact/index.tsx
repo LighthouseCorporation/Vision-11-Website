@@ -3,6 +3,7 @@ import { useState } from "react";
 import NewsLatterBox from "./NewsLatterBox";
 import SectionTitle from "../Common/SectionTitle";
 import { BarLoader } from 'react-spinners';
+import { usePathname } from 'next/navigation';
 import Link from "next/link";
 import Modal from "../Modal";
 
@@ -39,6 +40,15 @@ const Contact = () => {
     displayNextText();
   };
 
+  const path = usePathname();
+
+  function SendEmail() {
+    var recipient = "info@vision11.co.ke";
+    var subject = "Hello Vision";
+    var mailtoLink = "mailto:" + encodeURIComponent(recipient) + "?subject=" + encodeURIComponent(subject);
+    window.location.href = mailtoLink;
+  }
+
   async function copyToClipboard(text: string) {
     try {
       await navigator.clipboard.writeText(text);
@@ -54,8 +64,8 @@ const Contact = () => {
     <section id="contact" className="overflow-hidden py-16 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
-          title="Call Us Today"
-          paragraph="We'd love to see you grow"
+          title={path === '/' ? "Contact us Today" : "Let's Connect"}
+          paragraph=""
           center
         />
         <div className="flex flex-col items-center justify-center pb-5 py-5 mb-5 sm:flex-row sm:space-x-4 sm:space-y-0">
@@ -88,7 +98,8 @@ const Contact = () => {
             </>
           </Modal>
           <Link
-            href="/"
+            href=""
+            onClick={SendEmail}
             className="rounded-sm bg-primary my-5 px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
           >
             Send Email
