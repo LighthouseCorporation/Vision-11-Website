@@ -5,28 +5,28 @@ import SingleTestimonial from "./SingleTestimonial";
 const testimonialData: Testimonial[] = [
   {
     id: 1,
-    name: "Small Enterprises",
-    designation: "Ksh 50,000",
+    name: "Olive Rachel",
+    designation: "Sales and Customer Relations",
     content:
-      "Research is focused mainly on product-market fit, presence and operations",
+      "Jobs being lost is not a bad thing. We are simply finding better ways to do things, and better things to focus one",
     image: "/images/testimonials/auth-01.png",
     star: 5,
   },
   {
     id: 2,
-    name: "Medium Enterpises",
-    designation: "Ksh 200,000",
+    name: "Osman Lavero",
+    designation: "Data Analysis",
     content:
-      "Research is focused mainly on streamlining workflows and automation",
+      "These systems perform key corporate tasks faster and more precisely. If thats where we are going, then we better get there quick",
     image: "/images/testimonials/auth-02.png",
     star: 5,
   },
   {
     id: 3,
-    name: "Large Enterprises",
-    designation: "Ksh 800,000",
+    name: "Getty Nalika",
+    designation: "Strategic Planning",
     content:
-      "Research is focused mainly on having intelligent systems work for admins",
+      "Thats the thing about growth, we are constantly growing and evolving. And those who grow faster stay ahead of the curve",
     image: "/images/testimonials/auth-03.png",
     star: 5,
   },
@@ -37,8 +37,8 @@ const Testimonials = () => {
     <section className="dark:bg-bg-color-dark bg-gray-light relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
-          title="Enterprise Growth Research"
-          paragraph="Research based Enterprise Solutions"
+          title="Accelerate Your IT Modernization"
+          paragraph="Stay ahead of the curve"
           center
         />
 

@@ -1,6 +1,61 @@
+"use client"
+import {useEffect} from "react" 
 import Link from "next/link";
 
 const Hero = () => {
+  function printWebsite() {
+    if (typeof window !== 'undefined') {
+      window.print();
+    }
+  };
+
+  useEffect(() => {
+    const currentDate = new Date().toLocaleString();
+    const pageTitle = "Vision-11 | Your trusted growth partner";
+
+    const printStyles = `
+      @media print {
+        @page {
+          size: A4;
+          margin: 1cm;
+
+          @top-left {
+            content: "${currentDate}";
+          }
+
+          @top-center {
+            content: "${pageTitle}";
+          }
+
+          @top-right {
+            content: initial;
+          }
+
+          @bottom-left {
+            content: initial;
+          }
+
+          @bottom-center {
+            content: initial;
+          }
+
+          @bottom-right {
+            content: initial;
+          }
+        }
+      }
+    `;
+
+    const style = document.createElement('style');
+    style.setAttribute('type', 'text/css');
+    style.appendChild(document.createTextNode(printStyles));
+    document.head.appendChild(style);
+
+    return () => {
+      document.head.removeChild(style);
+    };
+  }, []);
+
   return (
     <>
       <section
@@ -22,16 +77,17 @@ const Hero = () => {
                 </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Link
-                    href="/"
+                    href="/articles"
                     className="rounded-sm bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
                   >
                     🔥Explore Our Research
                   </Link>
                   <Link
-                    href="/"
+                    href=""
+                    onClick={printWebsite}
                     className="inline-block rounded-sm bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"
                   >
-                    Download PDF
+                    Print Website
                   </Link>
                 </div>
               </div>

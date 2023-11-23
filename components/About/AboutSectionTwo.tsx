@@ -1,4 +1,5 @@
 import Image from "next/image";
+import SectionTitle from "../Common/SectionTitle";
 
 const AboutSectionTwo = () => {
   return (
@@ -27,6 +28,11 @@ const AboutSectionTwo = () => {
           <div className="w-full px-4 lg:w-1/2">
             <div className="wow mb-5 pb-5 fadeInUp max-w-[470px]" data-wow-delay=".2s">
               <div className="mb-9">
+              <SectionTitle
+                title=""
+                paragraph="..."
+                mb="44px"
+              />
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
                   Automate and Digitally represent Processes
                 </h3>

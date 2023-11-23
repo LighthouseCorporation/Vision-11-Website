@@ -51,8 +51,8 @@
 }
 .box {
   position: relative;
-  width: 400px;
-  height: 480px;
+  width: 420px;
+  height: 510px;
   overflow: hidden;
   border-radius: 8px;
 }
@@ -60,7 +60,7 @@
   content: '';
   position: absolute;
   width: 380px;
-  height: 450px;
+  height: 500px;
   background: linear-gradient(0deg, transparent,  #4558ff, rgb(147, 69, 255) );
   top: -50%;
   left: -50%;
@@ -72,7 +72,7 @@
   content: '';
   position: absolute;
   width: 380px;
-  height: 420px;
+  height: 500px;
   background: linear-gradient(0deg, transparent, #457dff, #9645ff);
   top: -50%;
   left: -50%;
@@ -111,7 +111,7 @@
 .input_box {
   position: relative;
   width: 300px;
-  margin-top: 35px;
+  margin-top: 20px;
 }
 
 .input_box input {
@@ -164,7 +164,7 @@
 
 .desired_service {
   position: relative;
-  margin-top: 20px;
+  margin-top: 10px;
   left: 0;
   margin-top: 40px;
 }
@@ -173,7 +173,6 @@
   position: relative;
   font-size: 1em;
   margin-bottom: 10px;
-  left: 10px;
 }
 
 .desired_service select {

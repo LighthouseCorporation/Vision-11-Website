@@ -4,9 +4,8 @@ const PricingBox = (props: {
   packageName: string;
   subtitle: string;
   children: React.ReactNode;
-  openFunction: ()=>void
 }) => {
-  const { price, duration, packageName, subtitle, children, openFunction } = props;
+  const { price, duration, packageName, subtitle, children} = props;
 
   return (
     <div className="w-full">
@@ -25,12 +24,6 @@ const PricingBox = (props: {
         </div>
         <p className="mb-7 text-base text-body-color">{subtitle}</p>
         <div className="pb-5 pt-2">{children}</div>
-        <div className="mb-8 border-b border-body-color border-opacity-10 pb-8 dark:border-white dark:border-opacity-10">
-          <button className="flex w-full mt-5 items-center justify-center rounded-sm bg-primary p-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp"
-          onClick={openFunction}>
-            Express Interest
-          </button>
-        </div>
         <div className="absolute bottom-0 right-0 z-[-1]">
           <svg
             width="179"

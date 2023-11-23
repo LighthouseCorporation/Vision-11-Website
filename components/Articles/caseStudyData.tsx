@@ -20,7 +20,7 @@ const caseData: ArticleType[] = [
     path: "academia",
     details: {
       section1: "Kenya faces a critical period as we go through the fourth industrial revolution. This requires of the Kenyan government and key stakeholders to initiate strategic planning, such that we come out victorious.",
-      section2: "Vision 11 has devised a plan, to transform Kenyas economy through education and guided innovation. Our research into this matter will pose as a stepping stone for Kenya towards socio-economic prosperity",
+      section2: "Vision 11 is seeking to transform Kenyas economy through education and guided innovation. Our research into this matter will pose as a stepping stone for Kenya towards socio-economic prosperity",
       subHeading: "Program Benefits",
       listItems: ["Reduced Unemployment", "Increased Production", "Increased GDP", "Technological Superiority", "Socio-economic Advancement"],
       section3: " ",
@@ -46,7 +46,7 @@ const caseData: ArticleType[] = [
     comments: "50",
     path: "color&drive",
     details: {
-      section1: "Color & Drive is an auto-detailing company located in the heart of Nairobi. It has looked to Vision-11 to conduct research on how it may expand to other parts of the country, improve product-market fit, and leverage modern Technology to improve operations",
+      section1: "Color & Drive is an auto-detailing company located in the heart of Nairobi. It has looked to automate its processes and run a fully autonomous workshop.",
       section2: "Vision 11 has Color&Drive sorted, ensuring it experiences a smooth growth trajectory while keeping up with modern technology. Vision-11 will also advice on futuristic products Colo&Drive may adopt to ensure it stays ahead of the curve",
       subHeading: "Benefits of this program",
       section3: " ",
@@ -59,7 +59,7 @@ const caseData: ArticleType[] = [
     id: 3,
     title: "Core City",
     paragraph:
-      "Working with Core City to solve the housing crisis in Kenya",
+      "Working with Core City to build smart homes in Kenya",
     image: "/images/blog/blog-02.jpg",
     image2: "/images/blog/guided-innovation.png",
     author: {
@@ -103,7 +103,7 @@ const caseData: ArticleType[] = [
       section1: "Alma is an E-commerce startup located in the heart of Nairobi. Its vision is to improve our online shopping experience, such that we can buy anything, from anyone, in the most convenient manner possible",
       section2: "Alma is looking to Vision 11 to conduct research on how it may integrate an Intelligent Assistant on its platform. Our prowess in automation and intelligent systems will serve them wonderfully.",
       subHeading: "Benefits of this program",
-      listItems: ["State of the art Intelligent Assistant for the platform","Modern Technology Integration","Improved Product-market fit", "enhanced Operational Efficiency"],
+      listItems: ["Intelligent Assistant for the platform","IT Modernization","Improved Product-market fit", "Enhanced Operational Efficiency"],
       section3: "",
       quote: "“Alma is about creating a platform where we can trade comfortably and efficiently” - Abdi Mirion, Senior Developer, Alma Corporation",
       closing: " "

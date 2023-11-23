@@ -74,7 +74,7 @@ const articleData: ArticleType[] = [
     path: "intelligent-systems-and-process-orchestration",
     details: {
       section1: "Imagine if you had to compute 3027 x 4083 by hand. Even though possible, it would take much longer by hand than using a calculator. Intelligent systems play a similar role. They span numerous sectors to simplify rather repetitive or computable tasks. From data analysis to supply chain management, Intelligent Systems are revolutionizing the world of process orchestration",
-      section2: "At Vision-11 we specialize in building custom intelligent systems for our clients, to ensure everything runs smoothly. It is part of our enterprise growth research bundle, where we explore the possibility of integrating an intelligent system into a companys workflow. Numerous benefits come along when this is done. From sales representatives, to admin assistants, our mission is to ensure you not only grow, but grow intelligently",
+      section2: "At Vision-11 we specialize in building custom intelligent systems for our clients, to ensure everything runs smoothly. It is part of our enterprise growth research bundle, where we explore the possibility of integrating an intelligent system into the company workflow. Numerous benefits come along when this is done. From customer support to admin assistants, our mission is to ensure you not only grow, but grow intelligently",
       subHeading: "",
       listItems: [""],
       section3: "",

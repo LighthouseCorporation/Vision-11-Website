@@ -3,13 +3,12 @@ import { Dispatch, SetStateAction, useState } from "react";
 type InputFormProps = {
     modalVisible: boolean,
     setModalVisible: Dispatch<SetStateAction<boolean>>,
-    service: string
 }
 
-const InputForm = ({ modalVisible, setModalVisible, service }: InputFormProps) => {
+const InputForm = ({ modalVisible, setModalVisible }: InputFormProps) => {
     const [name, setName] = useState<string>("")
     const [phone, setPhone] = useState<string>("")
-    const [selectedService, setSelectedService] = useState<string>(service)
+    const [selectedService, setSelectedService] = useState<string>("")
     const [submitted, setSubmitted] = useState<boolean>(false)
 
     function handleSubmit(){
@@ -45,9 +44,16 @@ const InputForm = ({ modalVisible, setModalVisible, service }: InputFormProps) =
                                             <form action="https://formsubmit.co/a8e59a9c3959435d8a376bc8e85ee915" method="POST"
                                             className="form_data flex flex-col items-center" id="form-data">
                                                 <h4 className="text-black dark:text-white text-center text-1xl mt-1">Expression of Interest</h4>
+                                                <div className="desired_service pl-3">
+                                                    <p className="ds_text">What tasks would you like the system to perform?</p>
+                                                    <select title="Services" id="services" name="Desired System Task" required>
+                                                        <option value="Intelligent Systems">I have a task in mind</option>
+                                                        <option value="Enterprise Growth Research">I&apos;m open to explore</option>
+                                                    </select>
+                                                </div>
                                                 <div className="input_box">
-                                                    <input className="text-white dark:text-white" placeholder="Name" name="Name" type="text" required />
-                                                    <span className="text-black dark:text-white">Name</span>
+                                                    <input className="text-white dark:text-white" placeholder="Company" name="Company Name" type="text" required />
+                                                    <span className="text-black dark:text-white">Company</span>
                                                     <i></i>
                                                 </div>
                                                 <div className="input_box">
@@ -55,16 +61,9 @@ const InputForm = ({ modalVisible, setModalVisible, service }: InputFormProps) =
                                                     <span className="text-black dark:text-white">Phone number</span>
                                                     <i></i>
                                                 </div>
-                                                <div className="desired_service">
-                                                    <p className="ds_text">Desired Service</p>
-                                                    <select defaultValue={service} title="Services" id="services" name="Desired Service" required>
-                                                        <option value="Intelligent Systems">Intelligent System</option>
-                                                        <option value="Enterprise Growth Research">Enterprise Growth Research</option>
-                                                        <option value="Process Orchestration">Process Orchestration</option>
-                                                    </select>
-                                                </div>
+                                                <h1 className="text-sm text-black dark:text-white pt-5 mt-2 pl-3">By Submitting, you allow Vision 11 to contact you</h1>
                                                 <div className="relative w-full">
-                                                    <button type="submit" className="submit_button text-black dark:text-white absolute top-5 right-0">
+                                                    <button type="submit" className="submit_button text-black dark:text-white absolute right-0">
                                                         Submit
                                                     </button>
                                                 </div>

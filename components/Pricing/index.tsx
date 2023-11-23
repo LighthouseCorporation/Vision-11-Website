@@ -8,17 +8,12 @@ import InputForm from "../InputForm";
 const Pricing = () => {
   const [detailsVisible, setDetailsVisible] = useState(true);
   const [modalVisible, setModalVisible] = useState(false)
-  const [selectedService, setSelectedService] = useState("")
 
-  function handleClick(service: string) {
-    setSelectedService(service)
-    setModalVisible(true)
-  }
   return (
     <section id="pricing" className="relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
-          title="Book a ticket to growth island"
+          title="Corporate Intelligent Systems"
           paragraph=""
           center
           width="665px"
@@ -70,65 +65,69 @@ const Pricing = () => {
 
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 my-5 py-5 md:grid-cols-2 lg:grid-cols-3">
           <PricingBox
-            packageName="Enterprise Growth Research"
+            packageName="Analyze Data"
             price={""}
             duration={""}
             subtitle=""
-            openFunction={() => handleClick("Enterprise Growth Research")}
           >
             {
               detailsVisible && (
                 <>
-                  <OfferList text="Business Modeling" status="active" />
-                  <OfferList text="Iterative Solutions" status="active" />
-                  <OfferList text="Execution Support" status="active" />
-                  <OfferList text="Access to research methodologies" status="active" />
-                  <OfferList text="Data Analytics" status="active" />
-                </>
-              )
-            }
-
-          </PricingBox>
-          <PricingBox
-            packageName="Intelligent Systems"
-            price={""}
-            duration={""}
-            subtitle=""
-            openFunction={() => handleClick("Intelligent Systems")}
-          >
-            {
-              detailsVisible && (
-                <>
-                  <OfferList text="Business Modeling" status="active" />
-                  <OfferList text="Iterative Solutions" status="active" />
-                  <OfferList text="Execution Support" status="active" />
-                  <OfferList text="Access to research methodologies" status="active" />
-                  <OfferList text="Data Analytics" status="active" />
+                  <OfferList text="Collect data" status="active" />
+                  <OfferList text="Perform inferential analysis" status="active" />
+                  <OfferList text="Perform Predictive analysis" status="active" />
+                  <OfferList text="Visualize data" status="active" />
+                  <OfferList text="Process Natural Language" status="active" />
                 </>
               )
             }
           </PricingBox>
           <PricingBox
-            packageName="Process Orchestration"
+            packageName="Solve problems"
             price={""}
             duration={""}
             subtitle=""
-            openFunction={() => handleClick("Process Orchestration")}
           >
             {
               detailsVisible && (
                 <>
-                  <OfferList text="Business Modeling" status="active" />
-                  <OfferList text="Iterative Solutions" status="active" />
-                  <OfferList text="Execution Support" status="active" />
-                  <OfferList text="Access to research methodologies" status="active" />
-                  <OfferList text="Data Analytics" status="active" />
+                  <OfferList text="Decision Support" status="active" />
+                  <OfferList text="Resource Optimization" status="active" />
+                  <OfferList text="Market Research" status="active" />
+                  <OfferList text="Regulation Compliance" status="active" />
+                  <OfferList text="Workflow Orchestration" status="active" />
+                </>
+              )
+            }
+          </PricingBox>
+          <PricingBox
+            packageName="Automate Processes"
+            price={""}
+            duration={""}
+            subtitle=""
+          >
+            {
+              detailsVisible && (
+                <>
+                  <OfferList text="Email Management" status="active" />
+                  <OfferList text="Data entry" status="active" />
+                  <OfferList text="Customer Support" status="active" />
+                  <OfferList text="Inventory Management" status="active" />
+                  <OfferList text="Appointment Scheduling" status="active" />
                 </>
               )
             }
           </PricingBox>
         </div>
-        <InputForm service={selectedService} modalVisible={modalVisible} setModalVisible={setModalVisible} />
+        <div className="mb-8 border-b border-body-color border-opacity-10 pb-8 dark:border-white dark:border-opacity-10">
+          <h1 className="text-center text-xl font-bold text-dark dark:text-white h-10">And Much More..</h1>
+          <button onClick={()=>setModalVisible(true)}
+          className="flex w-1/2 mt-5 mx-auto items-center justify-center rounded-sm bg-primary p-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp"
+          >
+            Build One Today
+          </button>
+        </div>
+        <InputForm modalVisible={modalVisible} setModalVisible={setModalVisible} />
       </div>
       <div className="absolute bottom-0 left-0 z-[-1]">
         <svg

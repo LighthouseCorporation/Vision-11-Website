@@ -24,7 +24,7 @@ const AboutSectionOne = () => {
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 lg:w-1/2">
               <SectionTitle
-                title="Let us learn what it means to orchestrate business processes"
+                title="What does it take?"
                 paragraph="The first ‘step’ is to generate a business model and represent it on a graphical user interface"
                 mb="44px"
               />
@@ -46,11 +46,7 @@ const AboutSectionOne = () => {
                   </div>
                 </div>
               </div>
-              <SectionTitle
-                title=""
-                paragraph="And then.."
-                mb="44px"
-              />
+              <h1 className="text-xl font-bold mt-5" >And Then ...</h1>
             </div>
             <div className="w-full px-4 lg:w-1/2">
               <div
