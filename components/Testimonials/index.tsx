@@ -17,7 +17,7 @@ const testimonialData: Testimonial[] = [
     name: "Osman Lavero",
     designation: "Data Analysis",
     content:
-      "These systems perform key corporate tasks faster and more precisely. If thats where we are going, then we better get there quick",
+      "These systems perform corporate tasks faster and more precisely. If thats where we are going, then we better get there quick",
     image: "/images/testimonials/auth-02.png",
     star: 5,
   },
@@ -26,7 +26,7 @@ const testimonialData: Testimonial[] = [
     name: "Getty Nalika",
     designation: "Strategic Planning",
     content:
-      "Thats the thing about growth, we are constantly growing and evolving. And those who grow faster stay ahead of the curve",
+      "That's the thing about growth, we are constantly growing and evolving. And those who grow faster stay ahead of the curve",
     image: "/images/testimonials/auth-03.png",
     star: 5,
   },

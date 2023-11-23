@@ -34,17 +34,16 @@ const AboutSectionTwo = () => {
                 mb="44px"
               />
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  2. Automate Processes
+                  2. Process Automation
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
                   Involves using a variety of tools and technologies, including workflow engines, business rules engines, and robotic process automation (RPA) to automate processes.
-                  These processes are then incorporated on the graphical user interface created earlier
-
+                  These processes are then incorporated onto a graphical user interface.
                 </p>
               </div>
               <div className="mb-9">
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  3. Monitor Processes
+                  3. Process Monitoring
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
                   Monitor the performance of business processes in real-time, including metrics such as cycle time, throughput, error rates, and real-time data analytics,
@@ -53,7 +52,7 @@ const AboutSectionTwo = () => {
               </div>
               <div className="mb-1">
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  4. Optimize Processes
+                  4. Process Optimization
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
                   Analyze process performance data and identify areas for improvement, such as bottlenecks or inefficiencies.

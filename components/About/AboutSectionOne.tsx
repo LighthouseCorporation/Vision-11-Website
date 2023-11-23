@@ -26,7 +26,7 @@ const AboutSectionOne = () => {
               <h1 className="mb-4 text-3xl font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[45px]"
               aria-description="What does it take to build an intelligent system?"
               >What does it take? </h1>
-              <h2 className="my-5 py-5 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">1. Build Corporate Model</h2>
+              <h2 className="my-5 py-5 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">1. Process Analysis</h2>
               <div
                 className="wow fadeInUp mb-12 max-w-[570px] lg:mb-0"
                 data-wow-delay=".15s"

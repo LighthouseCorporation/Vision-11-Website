@@ -13,7 +13,7 @@ const Contact = () => {
   const [copied, setCopied] = useState(false)
 
   const texts = [
-    { text: 'Processing Request', spinner: <BarLoader className="text-dark dark:text-white" /> },
+    { text: 'Processing Request', spinner: <BarLoader color="grey" /> },
   ];
 
   const [displayText, setDisplayText] = useState(texts[0]);
@@ -71,7 +71,7 @@ const Contact = () => {
         <div className="flex flex-col items-center justify-center pb-5 py-5 mb-5 sm:flex-row sm:space-x-4 sm:space-y-0">
           <button
             onClick={() => { RenderContact(); setModalVisible(true) }}
-            className="inline-block rounded-sm my-5 bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"
+            className="w-[300px] inline-block rounded-sm my-5 bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"
           >
             Get Number
           </button>
@@ -100,7 +100,7 @@ const Contact = () => {
           <Link
             href=""
             onClick={SendEmail}
-            className="rounded-sm bg-primary my-5 px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
+            className="w-[300px] text-center rounded-sm bg-primary my-5 px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
           >
             Send Email
           </Link>
