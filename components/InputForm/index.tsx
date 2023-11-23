@@ -48,7 +48,7 @@ const InputForm = ({ modalVisible, setModalVisible }: InputFormProps) => {
                                                     <p className="ds_text">What tasks would you like the system to perform?</p>
                                                     <select title="Services" id="services" name="Desired System Task" required>
                                                         <option value="Intelligent Systems">I have a task in mind</option>
-                                                        <option value="Enterprise Growth Research">I&apos;m open to explore</option>
+                                                        <option value="Enterprise Growth Research">{"I'm open to explore"}</option>
                                                     </select>
                                                 </div>
                                                 <div className="input_box">
