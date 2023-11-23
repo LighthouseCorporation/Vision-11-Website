@@ -26,7 +26,7 @@ const menuData: Menu[] = [
     submenu: [
       {
         id: 42,
-        title: "Contact Us",
+        title: "Contact",
         path: "/contact",
         newTab: false,
       }
