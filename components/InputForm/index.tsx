@@ -38,7 +38,7 @@ const InputForm = ({ modalVisible, setModalVisible }: InputFormProps) => {
                                                 <div className="desired_service pl-3">
                                                     <select title="Services" id="services" name="Desired Service" required>
                                                         <option value="Process Analysis">Process Analysis</option>
-                                                        <option value="Intelligent Systems">Intelligent Systems</option>
+                                                        <option value="Intelligent Systems">Intelligent System</option>
                                                     </select>
                                                     <ul>
                                                         <li className="mt-4 text-black text-sm font-semibold dark:text-white">Note: First time clients are required to start with process analysis</li>
