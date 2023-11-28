@@ -11,19 +11,10 @@ const InputForm = ({ modalVisible, setModalVisible }: InputFormProps) => {
     const [selectedService, setSelectedService] = useState<string>("")
     const [submitted, setSubmitted] = useState<boolean>(false)
 
-    function handleSubmit(){
-        if (name && phone) {
-            setSubmitted(true)
-        } else {
-            alert("All fields are required")
-        }
-    }
-    
-    function handleServiceSelect(e: React.ChangeEvent<HTMLSelectElement>){
-        console.log(selectedService)
+    function handleServiceSelect(e: React.ChangeEvent<HTMLSelectElement>) {
         setSelectedService(e.target.value)
     }
-    
+
     return (
         <>
             {
@@ -42,14 +33,16 @@ const InputForm = ({ modalVisible, setModalVisible }: InputFormProps) => {
                                             </div>
                                         ) : (
                                             <form action="https://formsubmit.co/a8e59a9c3959435d8a376bc8e85ee915" method="POST"
-                                            className="form_data flex flex-col items-center" id="form-data">
+                                                className="form_data flex flex-col items-center" id="form-data">
                                                 <h4 className="text-black dark:text-white text-center text-1xl mt-1">Expression of Interest</h4>
                                                 <div className="desired_service pl-3">
-                                                    <p className="ds_text">What tasks would you like the system to perform?</p>
-                                                    <select title="Services" id="services" name="Desired System Task" required>
-                                                        <option value="Intelligent Systems">I have a task in mind</option>
-                                                        <option value="Enterprise Growth Research">{"I'm open to explore"}</option>
+                                                    <select title="Services" id="services" name="Desired Service" required>
+                                                        <option value="Process Analysis">Process Analysis</option>
+                                                        <option value="Intelligent Systems">Intelligent Systems</option>
                                                     </select>
+                                                    <ul>
+                                                        <li className="mt-4 text-black text-sm font-semibold dark:text-white">Note: First time clients are required to start with process analysis</li>
+                                                    </ul>
                                                 </div>
                                                 <div className="input_box">
                                                     <input className="text-white dark:text-white" placeholder="Company" name="Company Name" type="text" required />

@@ -51,10 +51,10 @@ const Video = () => {
 
       <ModalVideo
         channel="youtube"
-        autoplay={true}
+        autoplay={false}
         start={true}
         isOpen={isOpen}
-        videoId="L61p2uyiMSo"
+        videoId="U154jmfa9Bs?si=U_bc5iZkY6a_Kvv-"
         onClose={() => setOpen(false)}
       />
 
