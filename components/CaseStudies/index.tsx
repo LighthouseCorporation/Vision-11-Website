@@ -16,7 +16,8 @@ export const CaseStudiesPage = () => {
                         </div>
                     ))}
                 </div>
-                <div
+                {/* Pagination */}
+                {/* <div
                     className="wow fadeInUp -mx-4 flex flex-wrap"
                     data-wow-delay=".15s"
                 >
@@ -77,7 +78,7 @@ export const CaseStudiesPage = () => {
                             </li>
                         </ul>
                     </div>
-                </div>
+                </div> */}
             </div>
         </section>
     )

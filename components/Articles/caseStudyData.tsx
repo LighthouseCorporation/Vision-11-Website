@@ -92,7 +92,7 @@ const caseData: ArticleType[] = [
     author: {
       name: "Lethium Deo",
       image: "/images/blog/alma.jpeg",
-      designation: "Graphic Designer",
+      designation: "Software Developer",
     },
     tags: ["E-Commerce","Intelligent Systems","Data Analytics", "Internet Shopping"],
     publishDate: "12th December 2022",

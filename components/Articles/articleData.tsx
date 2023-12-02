@@ -9,9 +9,9 @@ const articleData: ArticleType[] = [
     image: "/images/blog/blog-01.jpg",
     image2: "/images/blog/blog-01.jpg",
     author: {
-      name: "Brian Kabugi",
+      name: "Boujee Neel",
       image: "/images/blog/author-01.png",
-      designation: "Researcher",
+      designation: "Artist",
     },
     tags: ["Spirituality", "Spirituality", "Mathematics", "This is my thesis" ],
     publishDate: "23rd November 2023",
@@ -63,7 +63,7 @@ const articleData: ArticleType[] = [
     image: "/images/blog/blog-03.jpg",
     image2: "/images/blog/blog-01.jpg",
     author: {
-      name: "Stephanie Mbithe",
+      name: "Greta Olive",
       image: "/images/blog/author-03.png",
       designation: "Data Scientist",
     },
@@ -90,9 +90,9 @@ const articleData: ArticleType[] = [
     image: "/images/blog/blog-03.jpg",
     image2: "/images/blog/blog-01.jpg",
     author: {
-      name: "Brian Kabugi",
+      name: "Vision 11",
       image: "/images/blog/author-03.png",
-      designation: "Researcher",
+      designation: "Research & Development",
     },
     tags: ["Mathematics", "Mathematics", "The Human Soul", "The Human Mind"],
     publishDate: "11th June 2023",
@@ -107,33 +107,6 @@ const articleData: ArticleType[] = [
       section3: "",
       quote: "“Everyday it dawns on us, that we are not as special as we thought, and that we can be replicated as fast as we can be extinguished” - Brian Kabugi , Researcher, Vision-11",
       closing: " "
-    }
-  },
-  {
-    id: 3,
-    title: "Show me Show me please",
-    paragraph:
-      "A small prayer for God to show us the way",
-    image: "/images/blog/blog-04.jpg",
-    image2: "/images/blog/blog-01.jpg",
-    author: {
-      name: "Alma Neel",
-      image: "/images/blog/author-03.png",
-      designation: "Artist",
-    },
-    tags: ["Mathematics", "Mathematics", "The Human Soul", "The Human Mind"],
-    publishDate: "11th June 2001",
-    views: "42K",
-    comments: "842",
-    path: "mathematics-and-the-soul",
-    details: {
-      section1: "Show me please, the way I should go. I abide by your word, I abide by your law. Let the think the things I desire, that leave me inspired",
-      section2: "",
-      subHeading: "",
-      listItems: [""],
-      section3: "",
-      quote: "“Everyday it dawns on us, that we are not as special as we thought, and that we can be replicated as fast as we can be extinguished” - Brian Kabugi , Researcher, Vision-11",
-      closing: ""
     }
   }
 ];

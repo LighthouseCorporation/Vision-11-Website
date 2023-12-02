@@ -20,8 +20,7 @@ const Pricing = () => {
         />
 
         {/* Section Toggler */}
-
-        <div className="w-full hidden">
+        <div className="w-full">
           <div
             className="wow fadeInUp mb-8 flex justify-center md:mb-12 lg:mb-16"
             data-wow-delay=".1s"

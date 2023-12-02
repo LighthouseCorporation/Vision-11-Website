@@ -30,7 +30,8 @@ const Articles = () => {
             ))}
           </div>
 
-          <div
+          {/* {Pagination} */}
+          {/* <div
             className="wow fadeInUp -mx-4 flex flex-wrap"
             data-wow-delay=".15s"
           >
@@ -91,7 +92,7 @@ const Articles = () => {
                 </li>
               </ul>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
     </>
