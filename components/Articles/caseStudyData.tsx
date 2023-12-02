@@ -33,11 +33,11 @@ const caseData: ArticleType[] = [
     title: "Color & Drive",
     paragraph:
       "Leveraging Research to improve the state of vehicles in Kenya",
-    image: "/images/blog/blog-03.jpg",
-    image2: "/images/blog/guided-innovation.png",
+    image: "/images/blog/colordrive.jpg",
+    image2: "/images/blog/colordrive.jpg",
     author: {
       name: "Vision 11",
-      image: "/images/blog/author-03.png",
+      image: "/images/blog/colordrive.jpg",
       designation: "Auto Motive",
     },
     tags: ["Automotive", "Detailing", "Expansion", "Adaptation"],
@@ -47,7 +47,7 @@ const caseData: ArticleType[] = [
     path: "color&drive",
     details: {
       section1: "Color & Drive is an auto-detailing company located in the heart of Nairobi. It has looked to automate its processes and run a fully autonomous workshop.",
-      section2: "Vision 11 has Color&Drive sorted, ensuring it experiences a smooth growth trajectory while keeping up with modern technology. Vision-11 will also advice on futuristic products Colo&Drive may adopt to ensure it stays ahead of the curve",
+      section2: "Vision 11 has Color&Drive sorted, ensuring it experiences a smooth growth trajectory while keeping up with modern technology. Vision-11 will also advice on futuristic products Color&Drive may adopt to ensure it stays ahead of the curve",
       subHeading: "Benefits of this program",
       section3: " ",
       listItems: ["Expansion to other parts of the country","Adaptation of modern technology","Improved product market fit","Improved Operations"],
@@ -60,11 +60,11 @@ const caseData: ArticleType[] = [
     title: "Core City",
     paragraph:
       "Working with Core City to build smart homes in Kenya",
-    image: "/images/blog/blog-02.jpg",
-    image2: "/images/blog/guided-innovation.png",
+    image: "/images/blog/corecity.png",
+    image2: "/images/blog/corecity.png",
     author: {
       name: "Musharof Chy",
-      image: "/images/blog/author-02.png",
+      image: "/images/blog/corecity.png",
       designation: "Content Writer",
     },
     tags: ["Housing","Technology","Sustainable Energy","Adaptability"],
@@ -85,13 +85,13 @@ const caseData: ArticleType[] = [
   {
     id: 4,
     title: "Alma Corporation",
-    image2: "/images/blog/guided-innovation.png",
+    image2: "/images/blog/alma.jpeg",
     paragraph:
       "Leveraging Research to shift to an online global marketplace",
-    image: "/images/blog/blog-03.jpg",
+    image: "/images/blog/alma.jpeg",
     author: {
       name: "Lethium Deo",
-      image: "/images/blog/author-03.png",
+      image: "/images/blog/alma.jpeg",
       designation: "Graphic Designer",
     },
     tags: ["E-Commerce","Intelligent Systems","Data Analytics", "Internet Shopping"],
