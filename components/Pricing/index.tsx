@@ -76,7 +76,7 @@ const Pricing = () => {
                   <OfferList text="Inferential analysis" status="active" />
                   <OfferList text="Predictive analysis" status="active" />
                   <OfferList text="Visualize data" status="active" />
-                  <OfferList text="Process Natural Language" status="active" />
+                  <OfferList text="Voice Assistants" status="active" />
                 </>
               )
             }
