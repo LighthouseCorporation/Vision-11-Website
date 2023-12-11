@@ -1,7 +1,5 @@
 import { CaseStudiesPage } from "@/components/CaseStudies";
 import Breadcrumb from "@/components/Common/Breadcrumb";
-import Head from 'next/head';
-import { useSearchParams } from 'next/navigation';
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

@@ -17,16 +17,18 @@ export const metadata: Metadata = {
 const ArticleDetails = ({ article }: { article: ArticleType }) => {
     function RenderBlogID({ id }: { id: string }) {
         let color = null
+        let background = null
         if (article.id.toString() === id) {
-            color = "text-green-100"
+            color = "text-green-800"
+            background = "bg-[green]"
         }
         const pathname = articleData.find(item => item.id.toString() === id).path
 
         return (
             <li className="mx-1">
                 <Link
-                    href={"/case-studies/" + pathname}
-                    className={"flex h-9 min-w-[36px] items-center justify-center rounded-md bg-body-color bg-opacity-[15%] px-4 text-sm text-body-color transition hover:bg-primary hover:bg-opacity-100 hover:text-white" + color}
+                    href={"/articles/" + pathname}
+                    className={"flex h-9 min-w-[36px] items-center justify-center rounded-md bg-body-color bg-opacity-[15%] px-4 text-sm text-body-color transition hover:bg-primary hover:bg-opacity-100 hover:text-white " + color  + " " +  background}
                 >
                     {id}
                 </Link>
@@ -221,7 +223,7 @@ const ArticleDetails = ({ article }: { article: ArticleType }) => {
                                 {
                                     nextPath && (
                                         <Link
-                                            href={"/case-studies/" + nextPath}
+                                            href={"/articles/" + nextPath}
                                             className="flex h-9 min-w-[36px] items-center justify-center rounded-md bg-body-color bg-opacity-[15%] px-4 text-sm text-body-color transition hover:bg-primary hover:bg-opacity-100 hover:text-white"
                                         >
                                             Next

@@ -16,8 +16,10 @@ export const metadata: Metadata = {
 const CaseStudyDetails = ({ caseStudy }: { caseStudy: ArticleType }) => {
     function RenderBlogID({ id }: { id: string }) {
         let color = null
+        let background = null
         if (caseStudy?.id.toString() === id) {
-            color = "text-green-100"
+            color = "text-green-800"
+            background= "bg-[green]" 
         }
         const pathname = programData.find(item => item.id.toString() === id).path
 
@@ -25,7 +27,7 @@ const CaseStudyDetails = ({ caseStudy }: { caseStudy: ArticleType }) => {
             <li className="mx-1">
                 <Link
                     href={"/research-programs/" + pathname}
-                    className={"flex h-9 min-w-[36px] items-center justify-center rounded-md bg-body-color bg-opacity-[15%] px-4 text-sm text-body-color transition hover:bg-primary hover:bg-opacity-100 hover:text-white" + color}
+                    className={"flex h-9 min-w-[36px] items-center justify-center rounded-md bg-body-color bg-opacity-[15%] px-4 text-sm text-body-color transition hover:bg-primary hover:bg-opacity-100 hover:text-white " + color + " " + background}
                 >
                     {id}
                 </Link>
@@ -364,7 +366,7 @@ const CaseStudyDetails = ({ caseStudy }: { caseStudy: ArticleType }) => {
                                 {
                                     nextPath && (
                                         <Link
-                                            href={"/case-studies/" + nextPath}
+                                            href={"/research-programs/" + nextPath}
                                             className="flex h-9 min-w-[36px] items-center justify-center rounded-md bg-body-color bg-opacity-[15%] px-4 text-sm text-body-color transition hover:bg-primary hover:bg-opacity-100 hover:text-white"
                                         >
                                             Next

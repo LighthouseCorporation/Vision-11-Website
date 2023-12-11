@@ -83,7 +83,7 @@ const articleData: ArticleType[] = [
     }
   },
   {
-    id: 3,
+    id: 4,
     title: "Can Mathematics explain the soul?",
     paragraph:
       "Could it be that the soul can be quantified as a mathematical equation",
