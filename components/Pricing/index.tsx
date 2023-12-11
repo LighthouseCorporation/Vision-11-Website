@@ -4,21 +4,20 @@ import SectionTitle from "../Common/SectionTitle";
 import OfferList from "./OfferList";
 import PricingBox from "./PricingBox";
 import InputForm from "../InputForm";
+import Link from "next/link";
 
 const Pricing = () => {
   const [detailsVisible, setDetailsVisible] = useState(true);
-  const [modalVisible, setModalVisible] = useState(false)
 
   return (
     <section id="pricing" className="relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
-          title="Corporate Intelligent Systems"
+          title="The Most Advanced Research Organization in Africa"
           paragraph=""
           center
           width="665px"
         />
-
         {/* Section Toggler */}
         <div className="w-full">
           <div
@@ -64,7 +63,7 @@ const Pricing = () => {
 
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 my-5 py-5 md:grid-cols-2 lg:grid-cols-3">
           <PricingBox
-            packageName="Analyze Data"
+            packageName="Compute"
             price={""}
             duration={""}
             subtitle=""
@@ -72,17 +71,16 @@ const Pricing = () => {
             {
               detailsVisible && (
                 <>
-                  <OfferList text="Collect data" status="active" />
-                  <OfferList text="Inferential analysis" status="active" />
-                  <OfferList text="Predictive analysis" status="active" />
-                  <OfferList text="Visualize data" status="active" />
-                  <OfferList text="Voice Assistants" status="active" />
+                  <OfferList text="Large Language Models" status="active" />
+                  <OfferList text="Intelligent Systems" status="active" />
+                  <OfferList text="Quantum Computing" status="active" />
+                  <OfferList text="Vector Databases" status="active" />
                 </>
               )
             }
           </PricingBox>
           <PricingBox
-            packageName="Solve problems"
+            packageName="Spiritual"
             price={""}
             duration={""}
             subtitle=""
@@ -90,17 +88,16 @@ const Pricing = () => {
             {
               detailsVisible && (
                 <>
-                  <OfferList text="Decision Support" status="active" />
-                  <OfferList text="Resource Optimization" status="active" />
-                  <OfferList text="Market Research" status="active" />
-                  <OfferList text="Regulation Compliance" status="active" />
-                  <OfferList text="Workflow Orchestration" status="active" />
+                  <OfferList text="Nature of source" status="active" />
+                  <OfferList text="Meaning of life" status="active" />
+                  <OfferList text="Theory of everything" status="active" />
+                  <OfferList text="Consciousness of Matter" status="active" />
                 </>
               )
             }
           </PricingBox>
           <PricingBox
-            packageName="Automate Processes"
+            packageName="Engineering"
             price={""}
             duration={""}
             subtitle=""
@@ -108,25 +105,23 @@ const Pricing = () => {
             {
               detailsVisible && (
                 <>
-                  <OfferList text="Email Management" status="active" />
-                  <OfferList text="Data entry" status="active" />
-                  <OfferList text="Customer Support" status="active" />
-                  <OfferList text="Inventory Management" status="active" />
-                  <OfferList text="Appointment Scheduling" status="active" />
+                  <OfferList text="Sustainable Development" status="active" />
+                  <OfferList text="Brain Computer Interfaces" status="active" />
+                  <OfferList text="Cell Regeneration" status="active" />
+                  <OfferList text="Signal Processing" status="active" />
                 </>
               )
             }
           </PricingBox>
         </div>
         <div className="mb-8 border-b border-body-color border-opacity-10 pb-8 dark:border-white dark:border-opacity-10">
-          <h1 className="text-center text-xl font-bold text-dark dark:text-white h-10">And Much More..</h1>
-          <button onClick={()=>setModalVisible(true)}
+          <h1 className="text-center text-xl font-bold text-dark dark:text-white h-10">And Much More</h1>
+          <Link href="/research-programs"
           className="flex w-1/2 mt-5 mx-auto items-center justify-center rounded-sm bg-primary p-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp"
           >
-            Build One Today
-          </button>
+            Explore All Programs
+          </Link>
         </div>
-        <InputForm modalVisible={modalVisible} setModalVisible={setModalVisible} />
       </div>
       <div className="absolute bottom-0 left-0 z-[-1]">
         <svg

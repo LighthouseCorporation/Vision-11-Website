@@ -1,5 +1,5 @@
 import CaseStudyDetails from "@/components/CaseStudyDetails"
-import caseData from "@/components/Articles/caseStudyData";
+import caseData from "@/components/Articles/programData";
 import { Metadata } from "next";
 import { headers } from 'next/headers';
 

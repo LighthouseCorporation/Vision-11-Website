@@ -5,8 +5,8 @@ import { useSearchParams } from 'next/navigation';
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Case Studies | How Vision-11 is changing lives",
-  description: "Real life case studies of how vision-11 is changing lives",
+  title: "Research Programs | The future of humanity in data analysis",
+  description: "Applied Data Analysis for growth and abundance",
   // other metadata
 };
 
@@ -15,8 +15,8 @@ const CaseStudies = () => {
   return (
     <>
       <Breadcrumb
-        pageName="Case Studies"
-        description="Real Life case studies of how Vision-11 is changing lives"
+        pageName="Research Programs"
+        description="Applied Data Analysis for growth and abundance"
       />
       <CaseStudiesPage/>
     </>

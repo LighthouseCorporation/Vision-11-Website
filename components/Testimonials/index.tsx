@@ -1,6 +1,9 @@
+"use client";
+import { useState } from "react";
 import { Testimonial } from "@/types/testimonial";
 import SectionTitle from "../Common/SectionTitle";
 import SingleTestimonial from "./SingleTestimonial";
+import InputForm from "../InputForm";
 
 const testimonialData: Testimonial[] = [
   {
@@ -33,11 +36,12 @@ const testimonialData: Testimonial[] = [
 ];
 
 const Testimonials = () => {
+  const [modalVisible, setModalVisible] = useState(false)
   return (
     <section className="dark:bg-bg-color-dark bg-gray-light relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
-          title="Accelerate Your IT Modernization"
+          title="Accelerate Your IT Modernization With Our Corporate Solutions"
           paragraph=""
           center
         />
@@ -47,6 +51,12 @@ const Testimonials = () => {
             <SingleTestimonial key={testimonial.id} testimonial={testimonial} />
           ))}
         </div>
+        <button onClick={() => setModalVisible(true)}
+          className="flex w-1/2 mt-5 mx-auto items-center justify-center rounded-sm bg-primary p-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp"
+        >
+          Explore All Programs
+        </button>
+        <InputForm modalVisible={modalVisible} setModalVisible={setModalVisible} />
       </div>
       <div className="absolute right-0 top-5 z-[-1]">
         <svg

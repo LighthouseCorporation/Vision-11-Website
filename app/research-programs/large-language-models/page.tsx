@@ -1,16 +1,16 @@
 import CaseStudyDetails from "@/components/CaseStudyDetails"
-import caseData from "@/components/Articles/caseStudyData";
+import caseData from "@/components/Articles/programData";
 import { Metadata } from "next";
 import { headers } from 'next/headers';
 
 export const metadata: Metadata = {
-    title: "Alma Corporation | A Product of Vision-11",
-    description: "The Only tool you need to thrive in the online marketplace",
+    title: "Large Language Models",
+    description: "Pushing the boundaries of human-machine interaction",
     // other metadata
 };
 
 const CaseStudyPage = () => {
-    const data = caseData.find(item=>item.path === "alma" )
+    const data = caseData.find(item=>item.path === "large-language-models" )
     return (
             <CaseStudyDetails caseStudy={data} />
     )

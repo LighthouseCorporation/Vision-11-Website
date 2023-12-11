@@ -1,16 +1,16 @@
 import CaseStudyDetails from "@/components/CaseStudyDetails"
-import caseData from "@/components/Articles/caseStudyData";
+import programData from "@/components/Articles/programData";
 import { Metadata } from "next";
 import { headers } from 'next/headers';
 
 export const metadata: Metadata = {
-    title: "Color & Drive | A Vision-11 Case Study",
-    description: "Improving the state of vehicles in Kenya by leveraging research",
+    title: "Bio-Engineering | The Future of Human Capabilities",
+    description: "How we can use DNA to become super-humans ",
     // other metadata
 };
 
 const CaseStudyPage = () => {
-    const data = caseData.find(item=>item.path === "color&drive" )
+    const data = programData.find(item=>item.path === "bio-engineering" )
     return (
             <CaseStudyDetails caseStudy={data} />
     )

@@ -1,16 +1,16 @@
 import CaseStudyDetails from "@/components/CaseStudyDetails"
-import caseData from "@/components/Articles/caseStudyData";
+import caseData from "@/components/Articles/programData";
 import { Metadata } from "next";
 import { headers } from 'next/headers';
 
 export const metadata: Metadata = {
-    title: "Core-City | A Vision-11 Case Study",
-    description: "How Vision 11 is transforming the lives of Kenyans",
+    title: "Intelligent Ecommerce | Doing business the intelligent way",
+    description: "Corporate Assistants, Automated Data Analysis, Problem Solving",
     // other metadata
 };
 
 const CaseStudyPage = () => {
-    const data = caseData.find(item=>item.path === "core-city" )
+    const data = caseData.find(item=>item.path === "intelligent-ecommerce" )
     return (
             <CaseStudyDetails caseStudy={data} />
     )

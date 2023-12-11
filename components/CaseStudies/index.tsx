@@ -1,5 +1,5 @@
 import SingleCase from "@/components/Articles/SingleCase";
-import caseData from "@/components/Articles/caseStudyData";
+import caseData from "@/components/Articles/programData";
 
 export const CaseStudiesPage = () => {
 
