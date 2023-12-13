@@ -1,4 +1,4 @@
-import { Dispatch, SetStateAction, useState } from "react";
+import { Dispatch, SetStateAction, useState, useContext } from "react";
 
 type InputFormProps = {
     modalVisible: boolean,
@@ -41,16 +41,16 @@ const InputForm = ({ modalVisible, setModalVisible }: InputFormProps) => {
                                                         <option value="Intelligent Systems">Intelligent System</option>
                                                     </select>
                                                     <ul>
-                                                        <li className="mt-4 text-black text-sm font-semibold dark:text-white">Note: First time clients are required to start with process analysis</li>
+                                                        <li className="mt-4 text-black text-sm font-semibold dark:text-white">Note: First time clients are encouraged to start with process analysis</li>
                                                     </ul>
                                                 </div>
                                                 <div className="input_box">
-                                                    <input className="text-white dark:text-white" placeholder="Company" name="Company Name" type="text" required />
+                                                    <input className="text-black-300 dark:text-white" placeholder="" aria-placeholder="Company" name="Company Name" type="text" required />
                                                     <span className="text-black dark:text-white">Company</span>
                                                     <i></i>
                                                 </div>
                                                 <div className="input_box">
-                                                    <input className="text-white dark:text-white" placeholder="Phone number" name="Phone" type="text" required />
+                                                    <input className="text-white-300 dark:text-white" placeholder="" name="Phone" type="text" required />
                                                     <span className="text-black dark:text-white">Phone number</span>
                                                     <i></i>
                                                 </div>

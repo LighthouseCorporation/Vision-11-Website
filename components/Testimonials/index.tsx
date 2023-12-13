@@ -54,7 +54,7 @@ const Testimonials = () => {
         <button onClick={() => setModalVisible(true)}
           className="flex w-1/2 mt-5 mx-auto items-center justify-center rounded-sm bg-primary p-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp"
         >
-          Explore All Programs
+          Contact Sales
         </button>
         <InputForm modalVisible={modalVisible} setModalVisible={setModalVisible} />
       </div>
