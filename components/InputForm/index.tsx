@@ -45,12 +45,12 @@ const InputForm = ({ modalVisible, setModalVisible }: InputFormProps) => {
                                                     </ul>
                                                 </div>
                                                 <div className="input_box">
-                                                    <input className="text-black-300 dark:text-white" placeholder="" aria-placeholder="Company" name="Company Name" type="text" required />
+                                                    <input className="text-black-300 dark:text-white" placeholder="Company" aria-placeholder="Company" name="Company Name" type="text" required />
                                                     <span className="text-black dark:text-white">Company</span>
                                                     <i></i>
                                                 </div>
                                                 <div className="input_box">
-                                                    <input className="text-white-300 dark:text-white" placeholder="" name="Phone" type="text" required />
+                                                    <input className="text-white-300 dark:text-white" placeholder="Phone Number" name="Phone" type="text" required />
                                                     <span className="text-black dark:text-white">Phone number</span>
                                                     <i></i>
                                                 </div>
