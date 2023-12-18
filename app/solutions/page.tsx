@@ -9,14 +9,14 @@ export const metadata: Metadata = {
 };
 
 const CaseStudies = () => {
-  
+
   return (
     <>
       <Breadcrumb
-        pageName="Research Programs"
+        pageName="See how AI Could transform your life"
         description="Applied Data Analysis for growth and abundance"
       />
-      <CaseStudiesPage/>
+      <CaseStudiesPage />
     </>
   );
 };

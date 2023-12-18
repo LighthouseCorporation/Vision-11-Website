@@ -13,7 +13,7 @@ const Pricing = () => {
     <section id="pricing" className="relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
-          title="The Most Advanced Research Organization in Africa"
+          title="The Most Advanced Applied AI Lab in Africa"
           paragraph=""
           center
           width="665px"
