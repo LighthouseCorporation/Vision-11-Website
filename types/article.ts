@@ -27,4 +27,4 @@ export type ArticleType = {
   comments: string,
   path: string,
   details: ArticleDetails
-};
+} | undefined;
