@@ -22,21 +22,20 @@ const ArticleDetails = ({ article }: { article: ArticleType }) => {
             color = "text-green-800"
             background = "bg-[green]"
         }
-        const tempArticle = articleData.find(item => item?.id.toString() === id);
-        const pathname = tempArticle ? tempArticle.path : undefined;
+        const pathname = articleData.find(item => item.id.toString() === id).path
 
         return (
             <li className="mx-1">
                 <Link
-                    href={"/articles/" + pathname}
-                    className={"flex h-9 min-w-[36px] items-center justify-center rounded-md bg-body-color bg-opacity-[15%] px-4 text-sm text-body-color transition hover:bg-primary hover:bg-opacity-100 hover:text-white " + color + " " + background}
+                    href={"/case-studies/" + pathname}
+                    className={"flex h-9 min-w-[36px] items-center justify-center rounded-md bg-body-color bg-opacity-[15%] px-4 text-sm text-body-color transition hover:bg-primary hover:bg-opacity-100 hover:text-white" + color}
                 >
                     {id}
                 </Link>
             </li>
         )
     }
-    const nextItem = articleData.find(item => item?.id === (article?.id ? article.id + 1 : undefined));
+    const nextItem = articleData.find(item => item.id === article.id + 1)
     let nextPath = null
     if (nextItem) {
         nextPath = nextItem.path
