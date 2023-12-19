@@ -71,7 +71,7 @@ const programData: ArticleType[] = [
     publishDate: "23rd November 2023",
     views: "12K",
     comments: "50",
-    path: "corporate-assistants",
+    path: "virtual-friends",
     details: {
       section1: "Large language models are transforming the way we interact with machines and unlocking new possibilities in various fields.",
       section2: "Advancements in Language Processing with Vision 11. Vision 11 is at the forefront of empowering individuals with realistic virtual friends, ensuring they stay ahead of the curve in the rapidly evolving landscape of language processing. By leveraging modern technology and providing guidance on adopting futuristic products, Vision 11 enables businesses to experience growth and enhance their operations.",
