@@ -1,5 +1,4 @@
 import Image from "next/image";
-import SectionTitle from "../Common/SectionTitle";
 
 const checkIcon = (
   <svg width="16" height="13" viewBox="0 0 16 13" className="fill-current">
@@ -8,7 +7,7 @@ const checkIcon = (
 );
 
 const AboutSectionOne = () => {
-  const List = ({ text } : {text :'string'}) => (
+  const List = ({ text } : {text : string}) => (
     <p className="mb-5 flex items-center text-lg font-medium text-body-color">
       <span className="mr-4 flex h-[30px] w-[30px] items-center justify-center rounded-md bg-primary bg-opacity-10 text-primary">
         {checkIcon}
@@ -37,7 +36,6 @@ const AboutSectionOne = () => {
                     <List text="Value Proposition" />
                     <List text="Channels" />
                   </div>
-
                   <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
                     <List text="Revenue Streams" />
                     <List text="Key Resources" />
