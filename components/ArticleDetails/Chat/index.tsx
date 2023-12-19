@@ -4,10 +4,9 @@ import React, { useState } from 'react';
 const ChatPage = () => {
     const [messages, setMessages] = useState([]);
 
-    const handleMessageSend = (messageText) => {
+    const handleMessageSend = (messageText: string) => {
         const newMessage = { text: messageText, sender: 'user' };
-        setMessages(prevMessages => [...prevMessages, newMessage]);
-
+        const tempMessage = [...newMessage, prevMessage]
         // Simulate a response after a short delay
         setTimeout(() => {
             const responseMessage = { text: 'This is a response', sender: 'assistant' };
