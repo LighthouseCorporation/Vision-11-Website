@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 };
 
 const ArticlePage = () => {
-    const data = articleData.find(item=>item.path === "natural-language-processing" )
+    const data = articleData.find(item=>item?.path === "natural-language-processing" )
     return (
             <ArticleDetails article={data} />
     )

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 };
 
 const ArticlePage = () => {
-    const data = articleData.find(item=>item.path === "origin-of-the-universe" )
+    const data = articleData.find(item=>item?.path === "origin-of-the-universe" )
     return (
             <ArticleDetails article={data} />
     )
