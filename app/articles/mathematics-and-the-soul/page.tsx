@@ -1,6 +1,7 @@
 import articleData from "@/components/Articles/articleData";
 import ArticleDetails from "@/components/ArticleDetails";
 import { Metadata } from "next";
+import { ArticleType } from "@/types/article";
 
 export const metadata: Metadata = {
     title: "The Soul as a mathematical equation | A Vision-11 Analysis",
@@ -9,7 +10,11 @@ export const metadata: Metadata = {
 };
 
 const ArticlePage = () => {
-    const data = articleData.find(item=>item?.path === "mathematics-and-the-soul")
+    let data = {} as ArticleType
+    const tempData = articleData.find(item=>item?.path === "mathematics-and-the-soul" )
+    if(tempData){
+        data = tempData
+    }
     return (
             <ArticleDetails article={data} />
     )
