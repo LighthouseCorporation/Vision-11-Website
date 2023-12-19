@@ -14,7 +14,7 @@ const Pricing = () => {
       <div className="container">
         <SectionTitle
           title="The Most Advanced Applied AI Lab in Africa"
-          paragraph=""
+          paragraph=" "
           center
           width="665px"
         />
