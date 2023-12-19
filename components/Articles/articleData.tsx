@@ -6,11 +6,11 @@ const articleData: ArticleType[] = [
     title: "A thought experiment into the origin of the universe",
     paragraph:
       "The following is an excerpt from the main paper This is my Thesis",
-    image: "/images/blog/blog-01.jpg",
-    image2: "/images/blog/blog-01.jpg",
+    image: "/images/blog/origin.jpg",
+    image2: "/images/blog/origin.jpg",
     author: {
       name: "Boujee Neel",
-      image: "/images/blog/author-01.png",
+      image: "/images/blog/origin.jpg",
       designation: "Artist",
     },
     tags: ["Spirituality", "Spirituality", "Mathematics", "This is my thesis" ],
@@ -19,7 +19,7 @@ const articleData: ArticleType[] = [
     comments: "50",
     path: "origin-of-the-universe",
     details: {
-      section1: "Where did we come from? Where are we going? Does life have meaning? Generations have pondered tirelessly at what could be the answer to these questions. All we can do, is hypothesize.",
+      section1: "Where did we come from? Where are we going? Does life have meaning? Generations have pondered at what could be the answer to these questions. All we can do, is hypothesize.",
       section2: "Allow me propose a thesis, that all is mathematics. That all is an answer to two questions; Who am I? and Am I alone? Questions brought about by the realization of self. And that life has no general meaning, only the meaning the beholder inflicts upon himself. And so the universe was born in an effort to answer this questions, unknowingly unleashing all possible possibilities of what the answer could be. Or dare I say, only one possibility of what the answer could be. For there is an answer to every question. And since who I am is not similar to who you are, then duality is born, else we are one. And so we have it. All is an answer to two questions; Who am I? And am I alone? And the answer to each is one side of duality",
       subHeading: "",
       listItems: [""],
@@ -33,11 +33,11 @@ const articleData: ArticleType[] = [
     title: "The meaning of A + the meaning of B = the meaning of AB",
     paragraph:
       "The following analysis aims to prove that there are no coincidences",
-    image: "/images/blog/blog-02.jpg",
-    image2: "/images/blog/blog-01.jpg",
+    image: "/images/blog/nlp.png",
+    image2: "/images/blog/nlp.png",
     author: {
       name: "Brian Kabugi",
-      image: "/images/blog/author-02.png",
+      image: "/images/blog/nlp.png",
       designation: "Researcher",
     },
     tags: ["NLP", "Mathematics", "Free-will","Co-Incidences"],
@@ -60,11 +60,11 @@ const articleData: ArticleType[] = [
     title: "The role of intelligent systems in process orchestration",
     paragraph:
       "Intelligent systems play a vital role in process orchestration. Especially in this day and age.",
-    image: "/images/blog/blog-03.jpg",
-    image2: "/images/blog/blog-01.jpg",
+    image: "/images/blog/violin.jpeg",
+    image2: "/images/blog/violin.jpeg",
     author: {
       name: "Greta Olive",
-      image: "/images/blog/author-03.png",
+      image: "/images/blog/violin.jpeg",
       designation: "Data Scientist",
     },
     tags: ["Intelligent Systems", "Process Orchestration", "Automation", "Growth"],
@@ -83,15 +83,15 @@ const articleData: ArticleType[] = [
     }
   },
   {
-    id: 3,
+    id: 4,
     title: "Can Mathematics explain the soul?",
     paragraph:
       "Could it be that the soul can be quantified as a mathematical equation",
-    image: "/images/blog/blog-03.jpg",
-    image2: "/images/blog/blog-01.jpg",
+    image: "/images/blog/math.jpg",
+    image2: "/images/blog/math.jpg",
     author: {
       name: "Vision 11",
-      image: "/images/blog/author-03.png",
+      image: "/images/blog/math.jpg",
       designation: "Research & Development",
     },
     tags: ["Mathematics", "Mathematics", "The Human Soul", "The Human Mind"],

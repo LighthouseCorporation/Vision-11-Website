@@ -30,7 +30,7 @@ const programData: ArticleType[] = [
   },
   {
     id: 2,
-    title: "Large Language Models",
+    title: "Corporate Assistants",
     paragraph:
       "Pushing the boundaries of human-machine interaction",
     image: "/images/blog/llms.jpeg",
@@ -44,7 +44,7 @@ const programData: ArticleType[] = [
     publishDate: "23rd November 2023",
     views: "12K",
     comments: "50",
-    path: "large-language-models",
+    path: "corporate-assistants",
     details: {
       section1: "Large language models are transforming the way we interact with machines and unlocking new possibilities in various fields.",
       section2: "Advancements in Language Processing with Vision 11. Vision 11 is at the forefront of empowering organizations with large language models, ensuring they stay ahead of the curve in the rapidly evolving landscape of language processing. By leveraging modern technology and providing guidance on adopting futuristic products, Vision 11 enables businesses to experience growth and enhance their operations.",
@@ -57,7 +57,34 @@ const programData: ArticleType[] = [
   },
   {
     id: 3,
-    title: "Bio-Engineering",
+    title: "Virtual Friends",
+    paragraph:
+      "Pushing the boundaries of human-machine interaction",
+    image: "/images/blog/virtual-friends.jpeg",
+    image2: "/images/blog/virtual-friends.jpeg",
+    author: {
+      name: "Vision 11",
+      image: "/images/blog/virtual-friends.jpeg",
+      designation: "Auto Motive",
+    },
+    tags: ["Virtual Friends", "Automation", "Data Analysis", "Large Language Models"],
+    publishDate: "23rd November 2023",
+    views: "12K",
+    comments: "50",
+    path: "virtual-friends",
+    details: {
+      section1: "Large language models are transforming the way we interact with machines and unlocking new possibilities in various fields.",
+      section2: "Advancements in Language Processing with Vision 11. Vision 11 is at the forefront of empowering individuals with realistic virtual friends, ensuring they stay ahead of the curve in the rapidly evolving landscape of language processing. By leveraging modern technology and providing guidance on adopting futuristic products, Vision 11 enables businesses to experience growth and enhance their operations.",
+      subHeading: "Benefits of this program",
+      section3: "Exploring the Potential of Large Language Models. Large language models have a wide range of applications across industries, including: Natural language understanding for virtual assistants and chatbots, Content generation for marketing and advertising, Sentiment analysis for brand monitoring and customer feedback analysis, Language translation for global communication, Text summarization for information extraction and knowledge management",
+      listItems: ["Enhanced Efficiency","Improved Customer Experience","Data Analysis and Insights","Automation of Tasks", "Language Understanding and Contextualization"],
+      quote: "“In the realm of large language models, we unlock the power of language to revolutionize human-machine interaction",
+      closing: "With the advancements in large language models, we embrace a future where machines understand and communicate with us seamlessly, transforming the way we live, work, and interact with technology."
+    }
+  },
+  {
+    id: 3,
+    title: "Bio-Enhancements",
     paragraph:
       "Bio-Engineering and The Future of Human Capabilities",
     image: "/images/blog/bio.jpeg",

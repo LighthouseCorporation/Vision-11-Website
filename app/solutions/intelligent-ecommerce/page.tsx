@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 };
 
 const CaseStudyPage = () => {
-    const data = caseData.find(item=>item.path === "intelligent-ecommerce" )
+    const data = caseData.find(item=>item?.path === "intelligent-ecommerce" )
     return (
             <CaseStudyDetails caseStudy={data} />
     )

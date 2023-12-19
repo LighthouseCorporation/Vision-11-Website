@@ -4,13 +4,13 @@ import { Metadata } from "next";
 import { headers } from 'next/headers';
 
 export const metadata: Metadata = {
-    title: "Large Language Models",
+    title: "Virtual Friends",
     description: "Pushing the boundaries of human-machine interaction",
     // other metadata
 };
 
 const CaseStudyPage = () => {
-    const data = caseData.find(item=>item.path === "large-language-models" )
+    const data = caseData.find(item=>item?.path === "virtual-friends")
     return (
             <CaseStudyDetails caseStudy={data} />
     )

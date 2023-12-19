@@ -1,7 +1,5 @@
 import { CaseStudiesPage } from "@/components/CaseStudies";
 import Breadcrumb from "@/components/Common/Breadcrumb";
-import Head from 'next/head';
-import { useSearchParams } from 'next/navigation';
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -11,14 +9,14 @@ export const metadata: Metadata = {
 };
 
 const CaseStudies = () => {
-  
+
   return (
     <>
       <Breadcrumb
-        pageName="Research Programs"
+        pageName="See how AI Could transform your life"
         description="Applied Data Analysis for growth and abundance"
       />
-      <CaseStudiesPage/>
+      <CaseStudiesPage />
     </>
   );
 };

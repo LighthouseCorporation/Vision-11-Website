@@ -1,5 +1,4 @@
 import Image from "next/image";
-import SectionTitle from "../Common/SectionTitle";
 
 const checkIcon = (
   <svg width="16" height="13" viewBox="0 0 16 13" className="fill-current">
@@ -8,7 +7,7 @@ const checkIcon = (
 );
 
 const AboutSectionOne = () => {
-  const List = ({ text }) => (
+  const List = ({ text } : {text : string}) => (
     <p className="mb-5 flex items-center text-lg font-medium text-body-color">
       <span className="mr-4 flex h-[30px] w-[30px] items-center justify-center rounded-md bg-primary bg-opacity-10 text-primary">
         {checkIcon}
@@ -23,9 +22,7 @@ const AboutSectionOne = () => {
         <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full p-4  lg:w-1/2">
-              <h1 className="mb-4 text-3xl font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[45px]"
-              aria-description="What does it take to build an intelligent system?"
-              >What does it take? </h1>
+              <h1 className="mb-4 text-3xl font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[45px]">What does it take? </h1>
               <h2 className="my-5 py-5 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">1. Process Analysis</h2>
               <div
                 className="wow fadeInUp mb-12 max-w-[570px] lg:mb-0"
@@ -37,7 +34,6 @@ const AboutSectionOne = () => {
                     <List text="Value Proposition" />
                     <List text="Channels" />
                   </div>
-
                   <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
                     <List text="Revenue Streams" />
                     <List text="Key Resources" />

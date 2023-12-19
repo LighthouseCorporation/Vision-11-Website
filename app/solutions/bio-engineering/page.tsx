@@ -1,16 +1,16 @@
 import CaseStudyDetails from "@/components/CaseStudyDetails"
-import caseData from "@/components/Articles/programData";
+import programData from "@/components/Articles/programData";
 import { Metadata } from "next";
 import { headers } from 'next/headers';
 
 export const metadata: Metadata = {
-    title: "Academia Plus | A Vision-11 Case Study",
-    description: "Improving the economy of Kenya with education and guided innovation",
+    title: "Bio-Engineering | The Future of Human Capabilities",
+    description: "How we can use DNA to become super-humans ",
     // other metadata
 };
 
 const CaseStudyPage = () => {
-    const data = caseData.find(item=>item.path === "academia" )
+    const data = programData.find(item=>item?.path === "bio-engineering" )
     return (
             <CaseStudyDetails caseStudy={data} />
     )
