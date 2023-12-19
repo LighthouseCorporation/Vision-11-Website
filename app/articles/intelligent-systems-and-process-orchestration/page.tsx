@@ -10,7 +10,11 @@ export const metadata: Metadata = {
 };
 
 const ArticlePage = () => {
-    const data = articleData.find(item=>item?.path === "intelligent-systems-and-process-orchestration" )
+    let data = {} as ArticleType
+    const tempData = articleData.find(item=>item?.path === "intelligent-systems-and-process-orchestration" )
+    if(tempData){
+        data = tempData
+    }
     return (
             <ArticleDetails article={data} />
     )

@@ -63,7 +63,7 @@ const ArticleDetails = ({ article }: { article: ArticleType }) => {
                                             <div className="mr-4">
                                                 <div className="relative h-10 w-10 overflow-hidden rounded-full">
                                                     <Image
-                                                        src={article?.author.image ?? 'defaultImage'}
+                                                        src={article?.author.image ?? ''}
                                                         alt="author"
                                                         fill
                                                     />
@@ -144,7 +144,7 @@ const ArticleDetails = ({ article }: { article: ArticleType }) => {
                                     <div className="mb-10 w-full overflow-hidden rounded">
                                         <div className="relative aspect-[97/60] w-full sm:aspect-[97/44]">
                                             <Image
-                                                src={article?.image2}
+                                                src={article?.image2 ?? ''}
                                                 alt="image"
                                                 fill
                                                 className="object-cover object-center"
@@ -172,7 +172,7 @@ const ArticleDetails = ({ article }: { article: ArticleType }) => {
                                             ))
                                         }
                                     </ul>
-                                    <Quote quote={article?.details.quote} />
+                                    <Quote quote={article.details.quote} />
                                     <p className="mb-10 text-center text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
                                         {article?.details.closing}
                                     </p>
