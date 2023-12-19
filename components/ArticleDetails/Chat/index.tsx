@@ -6,7 +6,8 @@ const ChatPage = () => {
 
     const handleMessageSend = (messageText: string) => {
         const newMessage = { text: messageText, sender: 'user' };
-        const tempMessage = [...newMessage, prevMessage]
+        setMessages(prevMessages => [...prevMessages, newMessage]);
+
         // Simulate a response after a short delay
         setTimeout(() => {
             const responseMessage = { text: 'This is a response', sender: 'assistant' };
