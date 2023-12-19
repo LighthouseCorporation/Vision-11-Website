@@ -22,7 +22,7 @@ const ArticleDetails = ({ article }: { article: ArticleType }) => {
             color = "text-green-800"
             background = "bg-[green]"
         }
-        const pathname = articleData.find(item => item.id.toString() === id).path
+        const pathname = articleData.find(item => item?.id.toString() === id)?.path ?? '';
 
         return (
             <li className="mx-1">
@@ -35,7 +35,8 @@ const ArticleDetails = ({ article }: { article: ArticleType }) => {
             </li>
         )
     }
-    const nextItem = articleData.find(item => item.id === article.id + 1)
+    const nextItem = articleData.find(item => item?.id === (article?.id ?? 0) + 1);
+
     let nextPath = null
     if (nextItem) {
         nextPath = nextItem.path
@@ -62,7 +63,7 @@ const ArticleDetails = ({ article }: { article: ArticleType }) => {
                                             <div className="mr-4">
                                                 <div className="relative h-10 w-10 overflow-hidden rounded-full">
                                                     <Image
-                                                        src={article?.author.image}
+                                                        src={article?.author.image ?? 'defaultImage'}
                                                         alt="author"
                                                         fill
                                                     />
