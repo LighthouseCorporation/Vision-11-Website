@@ -48,7 +48,7 @@ const CaseStudyDetails = ({ caseStudy }: { caseStudy: ArticleType }) => {
                         <div className="w-full px-4 lg:w-8/12">
                             <div>
                                 <div className="flex">
-                                    <Link href="/research-programs" className="mr-5">
+                                    <Link href="/solutions" className="mr-5">
                                         <h1 className="text-3xl text-body-color">{"<"}</h1>
                                     </Link>
                                     <h2 className="mb-8 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight">
