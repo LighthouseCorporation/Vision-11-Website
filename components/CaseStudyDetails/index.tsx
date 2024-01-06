@@ -26,7 +26,7 @@ const CaseStudyDetails = ({ caseStudy }: { caseStudy: ArticleType }) => {
         return (
             <li className="mx-1">
                 <Link
-                    href={"/research-programs/" + pathname}
+                    href={"/solutions/" + pathname}
                     className={"flex h-9 min-w-[36px] items-center justify-center rounded-md bg-body-color bg-opacity-[15%] px-4 text-sm text-body-color transition hover:bg-primary hover:bg-opacity-100 hover:text-white " + color + " " + background}
                 >
                     {id}
@@ -366,7 +366,7 @@ const CaseStudyDetails = ({ caseStudy }: { caseStudy: ArticleType }) => {
                                 {
                                     nextPath && (
                                         <Link
-                                            href={"/research-programs/" + nextPath}
+                                            href={"/solutions/" + nextPath}
                                             className="flex h-9 min-w-[36px] items-center justify-center rounded-md bg-body-color bg-opacity-[15%] px-4 text-sm text-body-color transition hover:bg-primary hover:bg-opacity-100 hover:text-white"
                                         >
                                             Next
