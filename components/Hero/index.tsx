@@ -30,7 +30,7 @@ const Hero = () => {
                   Let there be growth
                 </h1>
                 <p className="dark:text-body-color-dark mb-12 text-base !leading-relaxed text-body-color sm:text-lg md:text-xl">
-                 Focusing on the real-world application of Artificial Intelligence
+                 Innovating products and ideas that advance humanity
                 </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Link
