@@ -11,8 +11,8 @@ import Video from "@/components/Video";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Vision-11 | APPLIED AI",
-  description: "Focusing on the real-world application of Intelligent Systems",
+  title: "Vision-11 |R&D",
+  description: "Innovating Products and Ideas that advance Humanity",
   // other metadata
 };
 

@@ -7,13 +7,13 @@ import InputForm from "../InputForm";
 import Link from "next/link";
 
 const Pricing = () => {
-  const [detailsVisible, setDetailsVisible] = useState(true);
+  const [detailsVisible, setDetailsVisible] = useState(false);
 
   return (
     <section id="pricing" className="relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
-          title="At the fore-front of trends and emerging technologies"
+          title="Improving the world, one step at a time"
           paragraph=""
           center
           width="665px"

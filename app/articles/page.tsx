@@ -5,8 +5,8 @@ import Breadcrumb from "@/components/Common/Breadcrumb";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Articles | Articles by Vision-11 that are worth your time",
-  description: "Articles by Vision-11 that are worth your time",
+  title: "Articles | Expanding Human Knowledge",
+  description: "Expanding Human Knowledge",
   // other metadata
 };
 

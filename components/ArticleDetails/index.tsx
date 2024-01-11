@@ -20,7 +20,7 @@ const ArticleDetails = ({ article }: { article: ArticleType }) => {
         let background = null
         if (article?.id.toString() === id) {
             color = "text-green-800"
-            background = "bg-[green]"
+            background = "bg-primary"
         }
         const pathname = articleData.find(item => item?.id.toString() === id)?.path ?? '';
 
@@ -28,7 +28,7 @@ const ArticleDetails = ({ article }: { article: ArticleType }) => {
             <li className="mx-1">
                 <Link
                     href={"/articles/" + pathname}
-                    className={"flex h-9 min-w-[36px] items-center justify-center rounded-md bg-body-color bg-opacity-[15%] px-4 text-sm text-body-color transition hover:bg-primary hover:bg-opacity-100 hover:text-white" + color}
+                    className={"flex h-9 min-w-[36px] items-center justify-center rounded-md bg-body-color bg-opacity-[50%] px-4 text-sm text-body-color transition hover:bg-primary hover:bg-opacity-100 hover:text-white " + background}
                 >
                     {id}
                 </Link>

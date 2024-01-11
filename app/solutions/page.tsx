@@ -3,7 +3,7 @@ import Breadcrumb from "@/components/Common/Breadcrumb";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Research Programs | The future of humanity in data analysis",
+  title: "Research Programs | The future of humanity",
   description: "Applied Data Analysis for growth and abundance",
   // other metadata
 };
@@ -13,8 +13,8 @@ const CaseStudies = () => {
   return (
     <>
       <Breadcrumb
-        pageName="See how AI Could transform your life"
-        description="Applied Data Analysis for growth and abundance"
+        pageName="Solutions for our growth"
+        description="Applied Data Science for growth and abundance"
       />
       <CaseStudiesPage />
     </>

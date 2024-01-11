@@ -23,7 +23,7 @@ const Footer = () => {
                   />
                 </Link>
                 <h1>Yours Truly,</h1>
-                <p className="dark:text-body-color-dark mb-9 text-base leading-relaxed text-body-color">
+                <p className="dark:text-primary mb-9 text-primary leading-relaxed text-body-color">
                   Vision 11
                 </p>
                 <div className="flex items-center">
@@ -200,7 +200,7 @@ const Footer = () => {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <circle opacity="0.8" cx="49.5" cy="49.5" r="49.5" fill="#959CB1" />
+            <circle opacity="0.8" cx="49.5" cy="49.5" r="49.5" fill="#40cc7d" />
             <mask
               id="mask0_94:899"
               style={{ maskType: "alpha" }}

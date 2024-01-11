@@ -54,7 +54,7 @@ const Header = () => {
                 className={`header-logo block w-full ${sticky ? "py-5 lg:py-2" : "py-8"
                   } `}
               >
-                <h1 className="text-dark hover:text-primary dark:text-white/70 dark:hover:text-white">Vision-11</h1>
+                <h1 className="text-primary hover:text-dark dark:hover:text-white">Vision-11</h1>
               </Link>
             </div>
             <div className="flex items-center justify-between px-4">
@@ -92,8 +92,8 @@ const Header = () => {
                           <Link
                             href={menuItem.path}
                             className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${usePathName === menuItem.path
-                              ? "text-primary dark:text-white"
-                              : "text-dark hover:text-primary dark:text-white/70 dark:hover:text-white"
+                              ? "text-primary dark:text-primary"
+                              : "text-dark hover:text-primary dark:text-white/70 dark:hover:text-primary"
                               }`}
                           >
                             {menuItem.title}

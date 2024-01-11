@@ -19,7 +19,7 @@ const CaseStudyDetails = ({ caseStudy }: { caseStudy: ArticleType }) => {
         let background = null
         if (caseStudy?.id.toString() === id) {
             color = "text-green-800"
-            background= "bg-[green]" 
+            background= "bg-primary" 
         }
         const pathname = programData.find(item => item.id.toString() === id).path
 

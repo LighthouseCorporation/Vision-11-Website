@@ -38,7 +38,7 @@ const programData: ArticleType[] = [
     author: {
       name: "Vision 11",
       image: "/images/blog/llms.png",
-      designation: "Auto Motive",
+      designation: "R&D",
     },
     tags: ["Neural Networks", "Automation", "Data Analysis", "Large Language Models"],
     publishDate: "23rd November 2023",
@@ -65,7 +65,7 @@ const programData: ArticleType[] = [
     author: {
       name: "Vision 11",
       image: "/images/blog/virtual-friends.jpeg",
-      designation: "Auto Motive",
+      designation: "R&D",
     },
     tags: ["Virtual Friends", "Automation", "Data Analysis", "Large Language Models"],
     publishDate: "23rd November 2023",
@@ -83,7 +83,7 @@ const programData: ArticleType[] = [
     }
   },
   {
-    id: 3,
+    id: 4,
     title: "Bio-Enhancements",
     paragraph:
       "Bio-Engineering and The Future of Human Capabilities",
@@ -110,7 +110,7 @@ const programData: ArticleType[] = [
     }
   },
   {
-    id: 4,
+    id: 5,
     title: "Intelligent Ecommerce",
     image2: "/images/blog/alma.jpeg",
     paragraph:
@@ -119,7 +119,7 @@ const programData: ArticleType[] = [
     author: {
       name: "Vision 11",
       image: "/images/blog/alma.jpeg",
-      designation: "Software Developer",
+      designation: "R&D",
     },
     tags: ["E-Commerce","Intelligent Systems","Data Analytics", "Internet Shopping"],
     publishDate: "12th December 2022",
