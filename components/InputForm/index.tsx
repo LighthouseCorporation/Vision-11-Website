@@ -51,7 +51,7 @@ const InputForm = ({ modalVisible, setModalVisible }: InputFormProps) => {
                                                 </div>
                                                 <div className="input_box">
                                                     <input className="text-white-300 dark:text-white" placeholder="Phone Number" name="Phone" type="text" required />
-                                                    <span className="text-black dark:text-white">Phone number</span>
+                                                    <span className="text-black dark:text-white">Phone Number</span>
                                                     <i></i>
                                                 </div>
                                                 <h1 className="text-sm text-black dark:text-white pt-5 mt-2 pl-3">By Submitting, you allow Vision 11 to contact you</h1>
