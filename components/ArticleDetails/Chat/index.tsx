@@ -2,7 +2,12 @@
 import React, { useState } from 'react';
 
 const ChatPage = () => {
-    const [messages, setMessages] = useState([]);
+    const [messages, setMessages] = useState<MessageType[]>([] as MessageType[]);
+
+    type MessageType = {
+        sender: string,
+        text: string
+    }
 
     const handleMessageSend = (messageText: string) => {
         const newMessage = { text: messageText, sender: 'user' };

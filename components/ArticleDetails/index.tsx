@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     // other metadata
 };
 
-const ArticleDetails = ({ article }: { article: ArticleType }) => {
+const ArticleDetails = ({ article = {} as ArticleType }: { article?: ArticleType }) => {
     function RenderBlogID({ id }: { id: string }) {
         let color = null
         let background = null
