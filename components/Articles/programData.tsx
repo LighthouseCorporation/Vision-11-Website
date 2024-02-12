@@ -135,6 +135,33 @@ const programData: ArticleType[] = [
       quote: "“Ecommerce is about creating a platform where we can trade comfortably and efficiently” - Abdi Mirion, Senior Developer, Department of Software Solutions",
       closing: " "
     }
+  },
+  {
+    id: 6,
+    title: "Enterprise Growth Research",
+    image2: "/images/blog/growth.jpg",
+    paragraph:
+      "Research For Your Growth",
+    image: "/images/blog/growth.jpg",
+    author: {
+      name: "Vision 11",
+      image: "/images/blog/growth.jpg",
+      designation: "R&D",
+    },
+    tags: ["Growth","Abundance","Research", "4IR"],
+    publishDate: "12th December 2023",
+    views: "85K",
+    comments: "50",
+    path: "enterprise-growth-research",
+    details: {
+      section1: "Ever wondered whether your business is performing its best? Whether you could incorporate new tools and methodologies to boost productivity and increase returns? Not to worry. Enterprise Growth Research is here",
+      section2: "With access to emerging technological trends and a wild imagination fine tuned for growth, Vision 11 is here to help you reach your maximum potential. Discover untapped markets, tools and methodologies. Call Us Today.",
+      subHeading: "Benefits of this program",
+      listItems: ["Business Growth","Accessibility","Advancement of humanity", "Enterprise Transformation"],
+      section3: "",
+      quote: "“Leveraging research for growth is the best thing enterprenuers can do” - Isla Omani, Growth Partner, Department of Enterprise Growth",
+      closing: " "
+    }
   }
 ];
 export default programData;
